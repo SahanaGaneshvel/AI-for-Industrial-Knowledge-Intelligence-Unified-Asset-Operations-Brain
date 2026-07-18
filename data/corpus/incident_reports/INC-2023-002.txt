@@ -1,0 +1,64 @@
+VANTARA PETROCHEM - UNIT 3
+INCIDENT / NEAR-MISS REPORT
+
+Report Number: INC-2023-002
+Date of Incident: 2023-02-05
+Time: 16:20 hours
+Classification: NEAR-MISS
+Severity: MEDIUM
+
+LOCATION
+--------
+Area: Tank Farm
+Specific Location: T-401 Naphtha Storage Tank, Gauge hatch area
+
+PERSONNEL INVOLVED
+------------------
+Discovered By: Sunita Patel (EMP-004), Shift Supervisor
+Reported To: Kavitha Reddy (EMP-007), Safety Officer
+
+INCIDENT DESCRIPTION
+--------------------
+During routine tank farm inspection, Shift Supervisor Sunita Patel noticed the gauge hatch on T-401 was not properly seated. Slight hydrocarbon vapor odor detected in the immediate vicinity.
+
+Investigation revealed:
+- Gauge hatch gasket was worn and not sealing properly
+- Condition had likely existed for several days
+- No visible liquid leak, but vapor emissions occurring
+
+IMMEDIATE CAUSE
+---------------
+Worn gauge hatch gasket allowing vapor emissions.
+
+UNDERLYING FACTORS
+------------------
+1. Gasket was last replaced during tank inspection in 2021
+2. No scheduled inspection interval for tank hatch gaskets in current PM program
+3. Gasket material may not be suitable for naphtha service
+
+POTENTIAL CONSEQUENCES (IF UNDETECTED)
+--------------------------------------
+- Continuous VOC emissions contributing to air quality issues
+- Environmental non-compliance risk
+- Potential fire hazard from vapor accumulation in enclosed areas
+
+CORRECTIVE ACTIONS
+------------------
+Immediate:
+- Gauge hatch gasket replaced immediately
+- T-401 area monitored with portable gas detector - clear
+
+Short-term:
+- All tank gauge hatches inspected - two additional worn gaskets found and replaced
+- Added gauge hatch gasket inspection to annual tank inspection checklist
+
+LESSONS LEARNED
+---------------
+1. Visual inspection of tank fittings should be included in routine operator rounds
+2. Gasket replacement should be scheduled, not just reactive
+
+REPORT PREPARED BY
+------------------
+Name: Kavitha Reddy (EMP-007)
+Role: Safety Officer
+Date: 2023-02-06

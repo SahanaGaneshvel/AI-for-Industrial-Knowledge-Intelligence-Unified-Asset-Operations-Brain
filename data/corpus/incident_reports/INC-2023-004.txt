@@ -1,0 +1,73 @@
+VANTARA PETROCHEM - UNIT 3
+INCIDENT / NEAR-MISS REPORT
+
+Report Number: INC-2023-004
+Date of Incident: 2023-03-12
+Time: 10:45 hours
+Classification: NEAR-MISS
+Severity: MEDIUM
+
+LOCATION
+--------
+Area: Crude Distillation Unit (CDU)
+Specific Location: P-101A pump skid, ground floor
+
+PERSONNEL INVOLVED
+------------------
+Discovered By: Mohammed Farooq (EMP-003), Process Operator
+Reported To: Sunita Patel (EMP-004), Shift Supervisor
+
+INCIDENT DESCRIPTION
+--------------------
+During routine hourly rounds, Operator Mohammed Farooq detected hydrocarbon odor near the P-101A pump area. Visual inspection revealed minor dripping from the mechanical seal area. Estimated leak rate was approximately 0.1 liters/hour.
+
+Immediate Actions Taken:
+1. Operator informed Shift Supervisor immediately
+2. Area isolated with warning signs
+3. Portable gas detector deployed - readings below LEL
+4. Maintenance contacted for emergency repair
+5. Operations prepared to switch to standby pump P-101B
+
+IMMEDIATE CAUSE
+---------------
+Mechanical seal leak due to premature wear of seal faces.
+
+UNDERLYING FACTORS
+------------------
+1. Seal failure occurred only 2 months after preventive maintenance (WO-2023-001)
+2. During PM, lubricant was changed to a new brand (EconoLube Standard 320)
+3. Possible correlation between lubricant change and seal degradation - requires investigation
+
+POTENTIAL CONSEQUENCES (IF UNDETECTED)
+--------------------------------------
+- Hydrocarbon accumulation in confined area
+- Potential fire/explosion if ignition source present
+- Environmental release to atmosphere
+
+CORRECTIVE ACTIONS
+------------------
+Immediate:
+- Seal replaced under WO-2023-003
+- Pump returned to service
+
+Recommended:
+- Investigate potential lubricant-seal compatibility issue
+- Review PM procedures for lubricant specifications
+
+LESSONS LEARNED
+---------------
+1. Regular operator rounds are critical for early leak detection
+2. Changes to maintenance materials (lubricants) should be reviewed for equipment compatibility
+3. Seal performance should be monitored closely after any PM activity
+
+REPORT PREPARED BY
+------------------
+Name: Kavitha Reddy (EMP-007)
+Role: Safety Officer
+Date: 2023-03-13
+
+SUPERVISOR REVIEW
+-----------------
+Name: Sunita Patel
+Date: 2023-03-13
+Comments: Good catch by the operator. Recommend tracking seal performance after lubricant changes.

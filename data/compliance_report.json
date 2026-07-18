@@ -1,0 +1,298 @@
+{
+  "scan_timestamp": "2026-07-18T08:22:36.783988",
+  "rules_checked": [
+    {
+      "rule_id": "CR-001",
+      "title": "Mechanical Seal Inspection Frequency",
+      "regulatory_ref": "OISD-STD-119 Section 4.3.2",
+      "requirement": "All rotating equipment with mechanical seals handling hazardous fluids shall undergo seal inspection during every planned turnaround or at intervals not exceeding 24 months",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "Centrifugal Pump P-101A, which handles hazardous fluids, lacks documented evidence of planned mechanical seal inspections within the required 24-month interval. All provided documents related to P-101A's seals are corrective maintenance work orders responding to leaks, not proactive inspections.",
+      "evidence": [
+        "work_orders/WO-2023-003.txt (P-101A: 'Minor seal leak detected')",
+        "work_orders/WO-2024-006.txt (P-101A: 'Seal leak detected')",
+        "work_orders/WO-2024-001.txt (P-101A: 'Major seal leak')",
+        "work_orders/WO-2023-013.txt (P-101A: 'Significant seal leak detected')",
+        "inspection_reports/INS-2023-C102-001.pdf (C-102: Reciprocating Compressor uses 'packing' not mechanical seals, hence not applicable to this rule)"
+      ],
+      "gap_description": "Mechanical seal inspections for Centrifugal Pump P-101A are not documented as per the regulatory requirement of being performed and documented at intervals not exceeding 24 months. While multiple work orders indicate seal issues, these are reactive and do not satisfy the proactive, scheduled inspection frequency requirement.",
+      "risk_level": "HIGH",
+      "recommended_action": "Establish and implement a robust planned maintenance schedule for mechanical seal inspections on Centrifugal Pump P-101A and other applicable rotating equipment handling hazardous fluids. Ensure these inspections are formally documented at least every 24 months or during planned turnarounds. Additionally, investigate the root cause of frequent seal failures on P-101A."
+    },
+    {
+      "rule_id": "CR-002",
+      "title": "Pressure Vessel Wall Thickness Trending",
+      "regulatory_ref": "OISD-STD-119 Section 5.1.4",
+      "requirement": "Thickness measurements on pressure vessels shall be documented and trended. Any wall loss exceeding 10% of nominal thickness requires engineering assessment within 30 days",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "An inspection report for Pressure Vessel V-310 (Report INS-2023-V310-001, dated 2023-08-15) identified a critical wall loss of 15.0% at Shell Course 2, 90\u00b0 position. This exceeds the 10% threshold requiring an engineering assessment within 30 days (by 2023-09-14). No evidence of a corresponding engineering assessment or corrective work order for this specific wall loss on V-310 was found in the provided documents within the stipulated timeframe.",
+      "evidence": [
+        "inspection_reports/INS-2023-V310-001.pdf: Shell Course 2 - 90\u00b0 wall thickness: Nominal 12.0mm, Measured 10.2mm, 15.0% loss, Status: REQUIRES ACTION, finding date 2023-08-15.",
+        "inspection_reports/INS-2023-V310-001.pdf: 'Engineering assessment required per OISD-STD-119 for 15% wall loss finding' and 'Work order must be raised within 7 days per compliance requirements to initiate corrective action for critical finding'.",
+        "WORK ORDER SEARCH RESULTS FOR V-310: Absence of any engineering assessment or corrective work order specifically for the 15% wall loss on V-310 within 30 days of the inspection date (i.e., by 2023-09-14)."
+      ],
+      "gap_description": "The facility failed to provide documented evidence of an engineering assessment or a corrective work order addressing the 15% wall loss on Pressure Vessel V-310 within 30 days of its detection, as mandated by OISD-STD-119 Section 5.1.4. Although the inspection report explicitly called for these actions, no subsequent records confirm their completion.",
+      "risk_level": "CRITICAL",
+      "recommended_action": "Immediately initiate and document a formal engineering assessment for the 15% wall loss on V-310, including a fitness-for-service evaluation and a detailed repair plan. Implement immediate corrective actions as per the assessment. Review and reinforce internal procedures for tracking and closing out critical inspection findings to ensure timely regulatory compliance."
+    },
+    {
+      "rule_id": "CR-003",
+      "title": "LOTO Zero Energy Verification",
+      "regulatory_ref": "IS 14489:2018 Clause 6.2.3",
+      "requirement": "Lockout-Tagout procedures shall include verification of zero energy state by attempting equipment startup before maintenance commences",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "The Lockout-Tagout (LOTO) procedure (SOP-LOTO-001) does not explicitly include a step for attempting equipment startup to verify a zero energy state before maintenance commences, as required by IS 14489:2018 Clause 6.2.3.",
+      "evidence": [
+        "sops/SOP-LOTO-001.pdf - Section 3. PROCEDURE, steps 3.1 through 3.6. There is no step detailing verification of zero energy state by attempting equipment startup.",
+        "RULE: LOTO Zero Energy Verification - REQUIREMENT: Lockout-Tagout procedures shall include verification of zero energy state by attempting equipment startup before maintenance commences"
+      ],
+      "gap_description": "SOP-LOTO-001 outlines preparation, shutdown, lockout/tagout application, stored energy release, performing work, and restoration. However, it critically omits the mandated step to test equipment by attempting startup after LOTO application and energy release, but before maintenance, to confirm that all energy sources are isolated and the equipment cannot inadvertently start.",
+      "risk_level": "CRITICAL",
+      "recommended_action": "Revise SOP-LOTO-001 to explicitly include a step, typically between '3.4 Stored Energy Release' and '3.5 Perform Maintenance Work', requiring personnel to attempt equipment startup (e.g., press the start button, test for voltage) to verify the zero energy state. This is a fundamental safety measure for LOTO."
+    },
+    {
+      "rule_id": "CR-004",
+      "title": "Annual Pressure Vessel Examination",
+      "regulatory_ref": "Factories Act 1948 Section 31",
+      "requirement": "Pressure vessels and equipment shall be examined by a competent person at least once every 12 months, with records maintained for inspection",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "confidence": "HIGH",
+      "finding": "An inspection record for the Pressure Vessel (V-310) exists within the last 12 months (2023-08-15). However, the provided documents do not contain a comprehensive register or inspection reports for all other Pressure Vessels and Heat Exchangers within the facility, preventing a full assessment of compliance with the 'all pressure-containing equipment' requirement.",
+      "evidence": [
+        "inspection_reports/INS-2023-V310-001.pdf",
+        "inspection_reports/INS-2023-PSV301-001.pdf"
+      ],
+      "gap_description": "Lack of an exhaustive list of all Pressure Vessels and Heat Exchangers in the plant, and corresponding annual inspection records for each, to verify that 'all pressure-containing equipment' (as per the defined types) has been examined within the past 12 months.",
+      "risk_level": "MEDIUM",
+      "recommended_action": "Provide a complete inventory of all Pressure Vessels and Heat Exchangers at the facility, along with their respective inspection reports for the past 12 months, performed by a competent person, to allow for full verification of compliance."
+    },
+    {
+      "rule_id": "CR-005",
+      "title": "Hot Work Fire Watch Duration",
+      "regulatory_ref": "OISD-GDN-206 Section 3.4",
+      "requirement": "All hot work permits shall specify fire watch requirements and duration, with minimum 30-minute fire watch after completion of hot work",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "The Hot Work Permit Procedure (SOP-HW-001) references OISD-GDN-206 and requires a fire watch to be designated and briefed. However, it does not specify the minimum 30-minute duration for the fire watch after the completion of hot work, as mandated by OISD-GDN-206 Section 3.4.",
+      "evidence": [
+        "sops/SOP-HW-001.pdf"
+      ],
+      "gap_description": "SOP-HW-001, the hot work permit procedure, is missing the explicit requirement for a minimum 30-minute fire watch after the completion of hot work.",
+      "risk_level": "HIGH",
+      "recommended_action": "Update SOP-HW-001 to clearly state the requirement for a minimum 30-minute fire watch after the completion of hot work, in compliance with OISD-GDN-206 Section 3.4. Ensure this requirement is incorporated into all hot work permits."
+    },
+    {
+      "rule_id": "CR-006",
+      "title": "Approved Lubricants for Rotating Equipment",
+      "regulatory_ref": "OISD-STD-144 Section 4.5.2",
+      "requirement": "Lubricants and chemicals used in rotating equipment shall be approved for the service conditions and documented in equipment records",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "The plant is non-compliant with the rule as maintenance records for rotating equipment P-101A show repeated use of an unapproved lubricant, EconoLube Standard 320 (LUB-003), which is explicitly restricted and incompatible with the equipment's FFKM seals as per the Vantara Petrochem Unit 3 Lubrication Standard (LUB-STD-001). This non-compliance resulted in multiple mechanical seal failures and hydrocarbon releases.",
+      "evidence": [
+        "LUB-STD-001.pdf - Section 3: Identifies P-101A as a 'Centrifugal Pump (Critical)' requiring 'LUB-001 or LUB-002 ONLY' due to 'FFKM/Fluorocarbon' seals.",
+        "LUB-STD-001.pdf - Section 4: Provides a 'CRITICAL WARNING' that 'EconoLube Standard 320 (LUB-003)' is 'INCOMPATIBLE with fluorocarbon elastomers (FFKM, FKM, Viton)' and explicitly states 'DO NOT USE LUB-003 on any equipment with fluorocarbon/FFKM seals, including: - P-101A Primary Feed Pump (John Crane Type 4620 seal with FFKM elastomers)'.",
+        "SOP-PUMP-001.pdf - 'IMPORTANT - Lubricant Requirements: Use ONLY approved lubricants as listed in equipment records. For P-101A/B, the approved lubricant is VantaLube Premium 320. Do not substitute without engineering approval and Management of Change review.'",
+        "WO-2023-001.txt - Actions Taken: 'Replaced lubricant with EconoLube Standard 320 (4 liters) per cost reduction initiative memo dated 2023-01-10'. Parts Used: 'EconoLube Standard 320 lubricant oil (4 L) - Stock Code LUB-003'.",
+        "WO-2023-003.txt - Notes: 'This is the first seal failure on P-101A in its 5-year service life... Unusual for seal to fail after only 2 months since last PM (WO-2023-001)'. (Shows failure post-LUB-003 introduction).",
+        "maintenance_work_orders.csv - wo_number: WO-2023-010 | date: 2023-07-02 | equipment_tag: P-101A | action_taken: 'Changed lubricant to EconoLube Standard 320.'",
+        "WO-2023-013.txt - Actions Taken: 'Refilled bearing housing with existing lubricant stock (EconoLube Standard 320)'. Parts Used: 'EconoLube Standard 320 lubricant oil (2 L) - Stock Code LUB-003'.",
+        "INC-2023-008.txt - Underlying Factors: 'Lubricant in bearing housing: EconoLube Standard 320 (last changed in WO-2023-010, July 2023)'. Root Cause Analysis (Preliminary): 'Seal elastomers showed swelling - possible chemical exposure'.",
+        "WO-2024-001.txt - Actions Taken: 'Filled bearing housing with VantaLube Premium 320 (reverted from previous lubricant per supervisor instruction)'. Parts Used: 'VantaLube Premium 320 lubricant oil (4 L) - Stock Code LUB-001'. (Indicates recognition of previous lubricant issue).",
+        "WO-2024-006.txt - Notes: 'Fourth seal failure on P-101A since early 2023. This frequency is abnormal - pump ran without seal issues from 2018 to 2023. Technician Priya Sharma notes: 'Something changed in our maintenance approach around January 2023. We need to look at PM records.''"
+      ],
+      "gap_description": "The plant failed to follow its own approved lubrication standard (LUB-STD-001) and operating procedure (SOP-PUMP-001) by substituting an approved lubricant (VantaLube Premium 320) with an explicitly prohibited one (EconoLube Standard 320, LUB-003) for P-101A. This deviation was initiated by a 'cost reduction initiative' without apparent adherence to the required Management of Change process, leading to a series of mechanical seal failures, hydrocarbon releases, and a near-miss incident.",
+      "risk_level": "CRITICAL",
+      "recommended_action": "1. Immediately conduct a formal Root Cause Analysis (RCA) to determine the failures in the MOC process that allowed the unapproved lubricant substitution for P-101A and to address the recurring seal failures. 2. Implement a mandatory review of all equipment lubrication schedules and actual lubricants used to confirm compliance with LUB-STD-001. 3. Provide immediate refresher training for all maintenance and operations personnel on LUB-STD-001, SOP-PUMP-001, lubricant compatibility, and the MOC procedure, emphasizing the critical safety and operational implications of non-compliance. 4. Strengthen the Management of Change (MOC) process to ensure all lubricant changes undergo thorough technical review, compatibility assessment, and formal approval before implementation, as outlined in LUB-STD-001 Section 6."
+    },
+    {
+      "rule_id": "CR-007",
+      "title": "Pressure Vessel Fitness Certificate",
+      "regulatory_ref": "PESO Rules Rule 14",
+      "requirement": "Every pressure vessel shall display a valid fitness certificate issued by authorized inspector with validity not exceeding 2 years",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "confidence": "MEDIUM",
+      "finding": "An inspection report for Pressure Vessel V-310 dated 2023-08-15 indicates acceptable condition after an external visual and UT thickness survey. However, the provided documents do not include an explicit 'fitness certificate issued by authorized inspector' for any pressure vessel, nor do they specify a validity period not exceeding 2 years as required by PESO Rules Rule 14. The inspection report itself does not fully satisfy the specific documentation requirement of a 'fitness certificate'.",
+      "evidence": [
+        "inspection_reports/INS-2023-V310-001.pdf"
+      ],
+      "gap_description": "The rule requires 'Every pressure vessel shall display a valid fitness certificate issued by authorized inspector with validity not exceeding 2 years'. While an inspection report for Pressure Vessel V-310 exists and shows acceptable condition, it is not explicitly identified as a 'fitness certificate' and does not state its validity period. No other pressure vessels or corresponding fitness certificates were found in the provided documents.",
+      "risk_level": "MEDIUM",
+      "recommended_action": "Request and verify the existence of formal 'fitness certificates' for Pressure Vessel V-310 and all other pressure vessels. Ensure these certificates are issued by an authorized inspector, clearly state a validity period not exceeding 2 years, and are properly displayed as per regulatory requirements."
+    },
+    {
+      "rule_id": "CR-008",
+      "title": "Hazardous Area Equipment Certification",
+      "regulatory_ref": "IS 15656:2006 Clause 8.1",
+      "requirement": "Equipment installed in Zone 1 or Zone 2 areas shall be certified for the appropriate hazardous area classification",
+      "status": "ERROR",
+      "confidence": "LOW",
+      "finding": "Error during assessment: Failed after 5 retries. Last error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 54.057997495s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 54\n}\n]",
+      "evidence": [],
+      "gap_description": "",
+      "risk_level": "UNKNOWN",
+      "recommended_action": "Manual review required"
+    },
+    {
+      "rule_id": "CR-009",
+      "title": "Recurring Failure Root Cause Analysis",
+      "regulatory_ref": "Internal Standard VP-MNT-012",
+      "requirement": "Equipment experiencing more than 3 similar failures within 18 months shall undergo formal Root Cause Analysis (RCA) with documented corrective actions",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "Equipment P-101A has experienced more than 3 similar mechanical seal failures within an 18-month period, which triggers the requirement for a formal Root Cause Analysis (RCA) with documented corrective actions per Internal Standard VP-MNT-012. However, as of the most recent failure on April 2, 2024 (WO-2024-006), a formal RCA report has not yet been issued, and a meeting to initiate the RCA was only 'to be scheduled'.",
+      "evidence": [
+        "incident_reports/INC-2023-004.txt - Date of Incident: 2023-03-12, 'Mechanical seal leak due to premature wear of seal faces.' This is the 1st recorded similar failure.",
+        "work_orders/WO-2023-003.txt - Date Issued: 2023-03-12, Problem/Reason: 'Minor seal leak detected during operator rounds.' Root Cause Analysis: 'Root cause inconclusive - seal sent to vendor for detailed analysis.'",
+        "incident_reports/INC-2023-008.txt - Date of Incident: 2023-09-01, 'Significant hydrocarbon leak from P-101A mechanical seal'. States 'This is the second seal failure on P-101A in 6 months (first failure: WO-2023-003, March 2023)'. RCA Status: 'Root cause: UNDER INVESTIGATION'.",
+        "work_orders/WO-2023-013.txt - Date Issued: 2023-09-01, Problem/Reason: 'Significant seal leak detected'. Root Cause Analysis: 'Root cause: Under investigation.'",
+        "incident_reports/INC-2024-001.txt - Date of Incident: 2024-01-08, 'Major mechanical seal failure on P-101A'. States 'This is the third P-101A seal failure in the past 12 months'. RCA Status: 'UNDER INVESTIGATION', 'Reliability Engineering has been tasked with formal RCA'.",
+        "work_orders/WO-2024-001.txt - Date Issued: 2024-01-08, Problem/Reason: 'Major seal leak - significant hydrocarbon release'. Root Cause Analysis: 'Root cause under investigation.'",
+        "work_orders/WO-2024-006.txt - Date Issued: 2024-04-02, Problem/Reason: 'Seal leak detected during operator rounds. Another seal failure on this pump.' States 'Fourth seal failure on P-101A since early 2023.' and 'Per Internal Standard VP-MNT-012, equipment with more than 3 similar failures in 18 months requires formal RCA. Meeting to be scheduled.' Also, 'Lab results from January failure (LAB-2024-0142) have been received but formal RCA report not yet issued.'"
+      ],
+      "gap_description": "Internal Standard VP-MNT-012 requires a formal Root Cause Analysis with documented corrective actions for P-101A due to more than three similar mechanical seal failures occurring within an 18-month period (specifically, four failures between March 2023 and April 2024). Although the need for RCA is acknowledged in WO-2024-006, the document explicitly states that a formal RCA report has 'not yet been issued' and that a meeting for it is 'to be scheduled'. This indicates a failure to complete and document the required formal RCA in a timely manner after the triggering event.",
+      "risk_level": "HIGH",
+      "recommended_action": "Immediately complete and formally document the Root Cause Analysis for the recurring P-101A mechanical seal failures. This RCA must identify the definitive root cause(s) and outline clear, actionable corrective actions. Subsequently, implement and track the effectiveness of these corrective actions, and review the overall RCA process to ensure compliance with the internal standard for future recurring failures."
+    },
+    {
+      "rule_id": "CR-010",
+      "title": "Timely Remediation of Inspection Findings",
+      "regulatory_ref": "OISD-STD-119 Section 5.2.1",
+      "requirement": "Critical inspection findings shall have corrective actions initiated within 7 days and completed within the timeframe specified in the engineering assessment",
+      "status": "ERROR",
+      "confidence": "LOW",
+      "finding": "Error during assessment: Failed after 5 retries. Last error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 28.254843054s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 28\n}\n]",
+      "evidence": [],
+      "gap_description": "",
+      "risk_level": "UNKNOWN",
+      "recommended_action": "Manual review required"
+    }
+  ],
+  "gaps_found": [
+    {
+      "rule_id": "CR-001",
+      "title": "Mechanical Seal Inspection Frequency",
+      "regulatory_ref": "OISD-STD-119 Section 4.3.2",
+      "requirement": "All rotating equipment with mechanical seals handling hazardous fluids shall undergo seal inspection during every planned turnaround or at intervals not exceeding 24 months",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "Centrifugal Pump P-101A, which handles hazardous fluids, lacks documented evidence of planned mechanical seal inspections within the required 24-month interval. All provided documents related to P-101A's seals are corrective maintenance work orders responding to leaks, not proactive inspections.",
+      "evidence": [
+        "work_orders/WO-2023-003.txt (P-101A: 'Minor seal leak detected')",
+        "work_orders/WO-2024-006.txt (P-101A: 'Seal leak detected')",
+        "work_orders/WO-2024-001.txt (P-101A: 'Major seal leak')",
+        "work_orders/WO-2023-013.txt (P-101A: 'Significant seal leak detected')",
+        "inspection_reports/INS-2023-C102-001.pdf (C-102: Reciprocating Compressor uses 'packing' not mechanical seals, hence not applicable to this rule)"
+      ],
+      "gap_description": "Mechanical seal inspections for Centrifugal Pump P-101A are not documented as per the regulatory requirement of being performed and documented at intervals not exceeding 24 months. While multiple work orders indicate seal issues, these are reactive and do not satisfy the proactive, scheduled inspection frequency requirement.",
+      "risk_level": "HIGH",
+      "recommended_action": "Establish and implement a robust planned maintenance schedule for mechanical seal inspections on Centrifugal Pump P-101A and other applicable rotating equipment handling hazardous fluids. Ensure these inspections are formally documented at least every 24 months or during planned turnarounds. Additionally, investigate the root cause of frequent seal failures on P-101A."
+    },
+    {
+      "rule_id": "CR-002",
+      "title": "Pressure Vessel Wall Thickness Trending",
+      "regulatory_ref": "OISD-STD-119 Section 5.1.4",
+      "requirement": "Thickness measurements on pressure vessels shall be documented and trended. Any wall loss exceeding 10% of nominal thickness requires engineering assessment within 30 days",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "An inspection report for Pressure Vessel V-310 (Report INS-2023-V310-001, dated 2023-08-15) identified a critical wall loss of 15.0% at Shell Course 2, 90\u00b0 position. This exceeds the 10% threshold requiring an engineering assessment within 30 days (by 2023-09-14). No evidence of a corresponding engineering assessment or corrective work order for this specific wall loss on V-310 was found in the provided documents within the stipulated timeframe.",
+      "evidence": [
+        "inspection_reports/INS-2023-V310-001.pdf: Shell Course 2 - 90\u00b0 wall thickness: Nominal 12.0mm, Measured 10.2mm, 15.0% loss, Status: REQUIRES ACTION, finding date 2023-08-15.",
+        "inspection_reports/INS-2023-V310-001.pdf: 'Engineering assessment required per OISD-STD-119 for 15% wall loss finding' and 'Work order must be raised within 7 days per compliance requirements to initiate corrective action for critical finding'.",
+        "WORK ORDER SEARCH RESULTS FOR V-310: Absence of any engineering assessment or corrective work order specifically for the 15% wall loss on V-310 within 30 days of the inspection date (i.e., by 2023-09-14)."
+      ],
+      "gap_description": "The facility failed to provide documented evidence of an engineering assessment or a corrective work order addressing the 15% wall loss on Pressure Vessel V-310 within 30 days of its detection, as mandated by OISD-STD-119 Section 5.1.4. Although the inspection report explicitly called for these actions, no subsequent records confirm their completion.",
+      "risk_level": "CRITICAL",
+      "recommended_action": "Immediately initiate and document a formal engineering assessment for the 15% wall loss on V-310, including a fitness-for-service evaluation and a detailed repair plan. Implement immediate corrective actions as per the assessment. Review and reinforce internal procedures for tracking and closing out critical inspection findings to ensure timely regulatory compliance."
+    },
+    {
+      "rule_id": "CR-003",
+      "title": "LOTO Zero Energy Verification",
+      "regulatory_ref": "IS 14489:2018 Clause 6.2.3",
+      "requirement": "Lockout-Tagout procedures shall include verification of zero energy state by attempting equipment startup before maintenance commences",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "The Lockout-Tagout (LOTO) procedure (SOP-LOTO-001) does not explicitly include a step for attempting equipment startup to verify a zero energy state before maintenance commences, as required by IS 14489:2018 Clause 6.2.3.",
+      "evidence": [
+        "sops/SOP-LOTO-001.pdf - Section 3. PROCEDURE, steps 3.1 through 3.6. There is no step detailing verification of zero energy state by attempting equipment startup.",
+        "RULE: LOTO Zero Energy Verification - REQUIREMENT: Lockout-Tagout procedures shall include verification of zero energy state by attempting equipment startup before maintenance commences"
+      ],
+      "gap_description": "SOP-LOTO-001 outlines preparation, shutdown, lockout/tagout application, stored energy release, performing work, and restoration. However, it critically omits the mandated step to test equipment by attempting startup after LOTO application and energy release, but before maintenance, to confirm that all energy sources are isolated and the equipment cannot inadvertently start.",
+      "risk_level": "CRITICAL",
+      "recommended_action": "Revise SOP-LOTO-001 to explicitly include a step, typically between '3.4 Stored Energy Release' and '3.5 Perform Maintenance Work', requiring personnel to attempt equipment startup (e.g., press the start button, test for voltage) to verify the zero energy state. This is a fundamental safety measure for LOTO."
+    },
+    {
+      "rule_id": "CR-005",
+      "title": "Hot Work Fire Watch Duration",
+      "regulatory_ref": "OISD-GDN-206 Section 3.4",
+      "requirement": "All hot work permits shall specify fire watch requirements and duration, with minimum 30-minute fire watch after completion of hot work",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "The Hot Work Permit Procedure (SOP-HW-001) references OISD-GDN-206 and requires a fire watch to be designated and briefed. However, it does not specify the minimum 30-minute duration for the fire watch after the completion of hot work, as mandated by OISD-GDN-206 Section 3.4.",
+      "evidence": [
+        "sops/SOP-HW-001.pdf"
+      ],
+      "gap_description": "SOP-HW-001, the hot work permit procedure, is missing the explicit requirement for a minimum 30-minute fire watch after the completion of hot work.",
+      "risk_level": "HIGH",
+      "recommended_action": "Update SOP-HW-001 to clearly state the requirement for a minimum 30-minute fire watch after the completion of hot work, in compliance with OISD-GDN-206 Section 3.4. Ensure this requirement is incorporated into all hot work permits."
+    },
+    {
+      "rule_id": "CR-006",
+      "title": "Approved Lubricants for Rotating Equipment",
+      "regulatory_ref": "OISD-STD-144 Section 4.5.2",
+      "requirement": "Lubricants and chemicals used in rotating equipment shall be approved for the service conditions and documented in equipment records",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "The plant is non-compliant with the rule as maintenance records for rotating equipment P-101A show repeated use of an unapproved lubricant, EconoLube Standard 320 (LUB-003), which is explicitly restricted and incompatible with the equipment's FFKM seals as per the Vantara Petrochem Unit 3 Lubrication Standard (LUB-STD-001). This non-compliance resulted in multiple mechanical seal failures and hydrocarbon releases.",
+      "evidence": [
+        "LUB-STD-001.pdf - Section 3: Identifies P-101A as a 'Centrifugal Pump (Critical)' requiring 'LUB-001 or LUB-002 ONLY' due to 'FFKM/Fluorocarbon' seals.",
+        "LUB-STD-001.pdf - Section 4: Provides a 'CRITICAL WARNING' that 'EconoLube Standard 320 (LUB-003)' is 'INCOMPATIBLE with fluorocarbon elastomers (FFKM, FKM, Viton)' and explicitly states 'DO NOT USE LUB-003 on any equipment with fluorocarbon/FFKM seals, including: - P-101A Primary Feed Pump (John Crane Type 4620 seal with FFKM elastomers)'.",
+        "SOP-PUMP-001.pdf - 'IMPORTANT - Lubricant Requirements: Use ONLY approved lubricants as listed in equipment records. For P-101A/B, the approved lubricant is VantaLube Premium 320. Do not substitute without engineering approval and Management of Change review.'",
+        "WO-2023-001.txt - Actions Taken: 'Replaced lubricant with EconoLube Standard 320 (4 liters) per cost reduction initiative memo dated 2023-01-10'. Parts Used: 'EconoLube Standard 320 lubricant oil (4 L) - Stock Code LUB-003'.",
+        "WO-2023-003.txt - Notes: 'This is the first seal failure on P-101A in its 5-year service life... Unusual for seal to fail after only 2 months since last PM (WO-2023-001)'. (Shows failure post-LUB-003 introduction).",
+        "maintenance_work_orders.csv - wo_number: WO-2023-010 | date: 2023-07-02 | equipment_tag: P-101A | action_taken: 'Changed lubricant to EconoLube Standard 320.'",
+        "WO-2023-013.txt - Actions Taken: 'Refilled bearing housing with existing lubricant stock (EconoLube Standard 320)'. Parts Used: 'EconoLube Standard 320 lubricant oil (2 L) - Stock Code LUB-003'.",
+        "INC-2023-008.txt - Underlying Factors: 'Lubricant in bearing housing: EconoLube Standard 320 (last changed in WO-2023-010, July 2023)'. Root Cause Analysis (Preliminary): 'Seal elastomers showed swelling - possible chemical exposure'.",
+        "WO-2024-001.txt - Actions Taken: 'Filled bearing housing with VantaLube Premium 320 (reverted from previous lubricant per supervisor instruction)'. Parts Used: 'VantaLube Premium 320 lubricant oil (4 L) - Stock Code LUB-001'. (Indicates recognition of previous lubricant issue).",
+        "WO-2024-006.txt - Notes: 'Fourth seal failure on P-101A since early 2023. This frequency is abnormal - pump ran without seal issues from 2018 to 2023. Technician Priya Sharma notes: 'Something changed in our maintenance approach around January 2023. We need to look at PM records.''"
+      ],
+      "gap_description": "The plant failed to follow its own approved lubrication standard (LUB-STD-001) and operating procedure (SOP-PUMP-001) by substituting an approved lubricant (VantaLube Premium 320) with an explicitly prohibited one (EconoLube Standard 320, LUB-003) for P-101A. This deviation was initiated by a 'cost reduction initiative' without apparent adherence to the required Management of Change process, leading to a series of mechanical seal failures, hydrocarbon releases, and a near-miss incident.",
+      "risk_level": "CRITICAL",
+      "recommended_action": "1. Immediately conduct a formal Root Cause Analysis (RCA) to determine the failures in the MOC process that allowed the unapproved lubricant substitution for P-101A and to address the recurring seal failures. 2. Implement a mandatory review of all equipment lubrication schedules and actual lubricants used to confirm compliance with LUB-STD-001. 3. Provide immediate refresher training for all maintenance and operations personnel on LUB-STD-001, SOP-PUMP-001, lubricant compatibility, and the MOC procedure, emphasizing the critical safety and operational implications of non-compliance. 4. Strengthen the Management of Change (MOC) process to ensure all lubricant changes undergo thorough technical review, compatibility assessment, and formal approval before implementation, as outlined in LUB-STD-001 Section 6."
+    },
+    {
+      "rule_id": "CR-009",
+      "title": "Recurring Failure Root Cause Analysis",
+      "regulatory_ref": "Internal Standard VP-MNT-012",
+      "requirement": "Equipment experiencing more than 3 similar failures within 18 months shall undergo formal Root Cause Analysis (RCA) with documented corrective actions",
+      "status": "NON_COMPLIANT",
+      "confidence": "HIGH",
+      "finding": "Equipment P-101A has experienced more than 3 similar mechanical seal failures within an 18-month period, which triggers the requirement for a formal Root Cause Analysis (RCA) with documented corrective actions per Internal Standard VP-MNT-012. However, as of the most recent failure on April 2, 2024 (WO-2024-006), a formal RCA report has not yet been issued, and a meeting to initiate the RCA was only 'to be scheduled'.",
+      "evidence": [
+        "incident_reports/INC-2023-004.txt - Date of Incident: 2023-03-12, 'Mechanical seal leak due to premature wear of seal faces.' This is the 1st recorded similar failure.",
+        "work_orders/WO-2023-003.txt - Date Issued: 2023-03-12, Problem/Reason: 'Minor seal leak detected during operator rounds.' Root Cause Analysis: 'Root cause inconclusive - seal sent to vendor for detailed analysis.'",
+        "incident_reports/INC-2023-008.txt - Date of Incident: 2023-09-01, 'Significant hydrocarbon leak from P-101A mechanical seal'. States 'This is the second seal failure on P-101A in 6 months (first failure: WO-2023-003, March 2023)'. RCA Status: 'Root cause: UNDER INVESTIGATION'.",
+        "work_orders/WO-2023-013.txt - Date Issued: 2023-09-01, Problem/Reason: 'Significant seal leak detected'. Root Cause Analysis: 'Root cause: Under investigation.'",
+        "incident_reports/INC-2024-001.txt - Date of Incident: 2024-01-08, 'Major mechanical seal failure on P-101A'. States 'This is the third P-101A seal failure in the past 12 months'. RCA Status: 'UNDER INVESTIGATION', 'Reliability Engineering has been tasked with formal RCA'.",
+        "work_orders/WO-2024-001.txt - Date Issued: 2024-01-08, Problem/Reason: 'Major seal leak - significant hydrocarbon release'. Root Cause Analysis: 'Root cause under investigation.'",
+        "work_orders/WO-2024-006.txt - Date Issued: 2024-04-02, Problem/Reason: 'Seal leak detected during operator rounds. Another seal failure on this pump.' States 'Fourth seal failure on P-101A since early 2023.' and 'Per Internal Standard VP-MNT-012, equipment with more than 3 similar failures in 18 months requires formal RCA. Meeting to be scheduled.' Also, 'Lab results from January failure (LAB-2024-0142) have been received but formal RCA report not yet issued.'"
+      ],
+      "gap_description": "Internal Standard VP-MNT-012 requires a formal Root Cause Analysis with documented corrective actions for P-101A due to more than three similar mechanical seal failures occurring within an 18-month period (specifically, four failures between March 2023 and April 2024). Although the need for RCA is acknowledged in WO-2024-006, the document explicitly states that a formal RCA report has 'not yet been issued' and that a meeting for it is 'to be scheduled'. This indicates a failure to complete and document the required formal RCA in a timely manner after the triggering event.",
+      "risk_level": "HIGH",
+      "recommended_action": "Immediately complete and formally document the Root Cause Analysis for the recurring P-101A mechanical seal failures. This RCA must identify the definitive root cause(s) and outline clear, actionable corrective actions. Subsequently, implement and track the effectiveness of these corrective actions, and review the overall RCA process to ensure compliance with the internal standard for future recurring failures."
+    }
+  ],
+  "summary": {
+    "total_rules": 10,
+    "compliant": 0,
+    "non_compliant": 6,
+    "partial": 0,
+    "insufficient_evidence": 4,
+    "critical_gaps": 3,
+    "high_risk_gaps": 3
+  },
+  "scan_duration_seconds": 835.02
+}

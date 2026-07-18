@@ -1,0 +1,92 @@
+VANTARA PETROCHEM - UNIT 3
+INCIDENT / NEAR-MISS REPORT
+
+Report Number: INC-2024-001
+Date of Incident: 2024-01-08
+Time: 09:15 hours
+Classification: INCIDENT
+Severity: HIGH
+
+LOCATION
+--------
+Area: Crude Distillation Unit (CDU)
+Specific Location: P-101A pump skid, ground floor
+
+PERSONNEL INVOLVED
+------------------
+Discovered By: Control Room (via seal failure alarm)
+First Responder: Mohammed Farooq (EMP-003), Process Operator
+Emergency Coordinator: Kavitha Reddy (EMP-007), Safety Officer
+Maintenance Lead: Priya Sharma (EMP-002)
+
+INCIDENT DESCRIPTION
+--------------------
+Major mechanical seal failure on P-101A with significant hydrocarbon release. Control room received seal failure alarm at 09:15 hours. Operator dispatched to investigate found substantial leak with pooling product.
+
+Emergency Shutdown System (ESD) activated from control room.
+
+Leak rate estimated: 2 liters/minute (major release)
+Total estimated release: ~50 liters before isolation complete
+LEL reading: 25% peak, requiring full area evacuation
+
+Emergency response timeline:
+- 09:15 - Alarm received in control room
+- 09:17 - Operator on scene, confirms major leak
+- 09:18 - ESD activated, emergency alarm raised
+- 09:20 - Area evacuation complete
+- 09:25 - Fire crew on station
+- 09:45 - LEL readings dropping below 10%
+- 10:30 - Area declared safe for maintenance entry
+- 13:15 - Seal replacement complete
+- 14:00 - Pump returned to service with extended monitoring
+
+No injuries reported. No fire or ignition.
+
+IMMEDIATE CAUSE
+---------------
+Catastrophic mechanical seal failure. Seal faces damaged, elastomers showed severe degradation.
+
+ROOT CAUSE ANALYSIS
+-------------------
+Status: UNDER INVESTIGATION
+
+Preliminary findings from seal autopsy:
+- Elastomer components (FFKM O-rings) showed chemical degradation
+- Swelling pattern suggests exposure to incompatible substance
+- Lubricant sample collected and sent to external lab (Report #LAB-2024-0142 pending)
+
+Reliability Engineering has been tasked with formal RCA. This is the third P-101A seal failure in the past 12 months - an unusual frequency that warrants investigation.
+
+CORRECTIVE ACTIONS TAKEN
+------------------------
+Immediate:
+1. Seal replaced
+2. Bearing housing flushed and refilled with VantaLube Premium 320
+3. Enhanced monitoring schedule implemented
+
+Pending Investigation:
+1. Await lab analysis results
+2. Review maintenance history for changes in practices or materials
+3. Formal RCA to be completed within 30 days
+
+LESSONS LEARNED (PRELIMINARY)
+-----------------------------
+1. Multiple similar failures on same equipment should trigger earlier investigation
+2. Emergency response was effective - drills and training paid off
+3. Importance of preserving failed components for analysis
+
+REGULATORY NOTIFICATION
+-----------------------
+Not required - no injuries, release contained within plant boundary, below reportable threshold.
+
+REPORT PREPARED BY
+------------------
+Name: Kavitha Reddy (EMP-007)
+Role: Safety Officer
+Date: 2024-01-09
+
+MANAGEMENT REVIEW
+-----------------
+Name: Plant Manager
+Date: 2024-01-10
+Comments: Third seal failure in a year is concerning. Awaiting RCA findings. Maintenance and Reliability teams to prioritize this investigation.

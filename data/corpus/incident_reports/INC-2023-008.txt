@@ -1,0 +1,101 @@
+VANTARA PETROCHEM - UNIT 3
+INCIDENT / NEAR-MISS REPORT
+
+Report Number: INC-2023-008
+Date of Incident: 2023-09-01
+Time: 14:30 hours
+Classification: NEAR-MISS
+Severity: HIGH
+
+LOCATION
+--------
+Area: Crude Distillation Unit (CDU)
+Specific Location: P-101A pump skid, ground floor
+
+PERSONNEL INVOLVED
+------------------
+Discovered By: Mohammed Farooq (EMP-003), Process Operator
+Reported To: Sunita Patel (EMP-004), Shift Supervisor
+Emergency Response: Kavitha Reddy (EMP-007), Safety Officer
+
+INCIDENT DESCRIPTION
+--------------------
+Significant hydrocarbon leak from P-101A mechanical seal detected by operator during rounds. Leak rate was substantial - visible spray and pooling of product observed. Strong hydrocarbon odor in the area.
+
+Initial gas detector reading: LEL 15% in immediate vicinity of pump.
+
+Emergency response initiated:
+1. Emergency alarm raised
+2. Area evacuation within 3 minutes
+3. Fire crew deployed on standby
+4. ESD activation for P-101A
+5. Standby pump P-101B brought online from control room
+
+IMMEDIATE CAUSE
+---------------
+Mechanical seal failure - complete loss of sealing function. Seal faces damaged beyond repair.
+
+UNDERLYING FACTORS
+------------------
+1. This is the second seal failure on P-101A in 6 months (first failure: WO-2023-003, March 2023)
+2. Seal elastomers appeared swollen and degraded upon removal
+3. Lubricant in bearing housing: EconoLube Standard 320 (last changed in WO-2023-010, July 2023)
+
+POTENTIAL CONSEQUENCES (IF UNDETECTED)
+--------------------------------------
+- Major hydrocarbon release with potential for fire/explosion
+- LEL readings already at 15% - approaching dangerous levels
+- Multiple personnel work in the area during day shift
+- If incident had occurred during night shift with reduced manning, delayed detection could have resulted in serious consequences
+
+RISK ASSESSMENT
+---------------
+Without intervention:
+- Probability of ignition: MEDIUM (electrical equipment in area)
+- Potential consequence: MAJOR (fire, personnel injury, equipment damage)
+- Risk rating: HIGH
+
+ROOT CAUSE ANALYSIS (PRELIMINARY)
+---------------------------------
+Root cause: UNDER INVESTIGATION
+
+Observations:
+1. Seal elastomers showed swelling - possible chemical exposure
+2. Pump ran without seal issues from 2018 to early 2023
+3. Two failures in 6 months is unusual for this equipment
+
+Maintenance engineering to review service history and recent changes. Failed seal and lubricant samples to be sent for laboratory analysis.
+
+CORRECTIVE ACTIONS
+------------------
+Immediate:
+- Seal replaced under WO-2023-013
+- Area gas-freed and returned to normal operations
+- Failed seal preserved for analysis
+
+Short-term:
+- Send lubricant and failed seal samples to external laboratory
+- Review recent maintenance records for any changes in materials or practices
+
+LESSONS LEARNED
+---------------
+1. Two similar failures on same equipment warrants investigation
+2. Emergency response was effective - regular drills pay off
+3. Preserving failed components for analysis is important
+
+REPORT PREPARED BY
+------------------
+Name: Kavitha Reddy (EMP-007)
+Role: Safety Officer
+Date: 2023-09-02
+
+SUPERVISOR REVIEW
+-----------------
+Name: Sunita Patel
+Date: 2023-09-02
+Comments: Second seal failure in 6 months is concerning. Request maintenance engineering review P-101A service history.
+
+HSE MANAGER REVIEW
+------------------
+Date: 2023-09-03
+Comments: Escalated to Plant Manager. Recommend formal investigation if another failure occurs.

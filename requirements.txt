@@ -1,0 +1,27 @@
+# Backend dependencies
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# LLM - Google Gemini
+google-generativeai>=0.8.0
+
+# Vector store
+chromadb>=0.4.18
+
+# Knowledge graph
+networkx>=3.2
+
+# Document parsing
+pypdf>=3.17.0
+pandas>=2.1.0
+openpyxl>=3.1.2
+Pillow>=10.0.0
+
+# PDF generation for synthetic documents
+reportlab>=4.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+httpx>=0.25.0

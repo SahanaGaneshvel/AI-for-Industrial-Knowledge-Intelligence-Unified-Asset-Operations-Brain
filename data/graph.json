@@ -1,0 +1,3931 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "node_type": "document",
+      "doc_type": "maintenance_work_order",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\maintenance_work_orders.csv",
+      "summary": "This document compiles a series of maintenance work orders from January 2023 to January 2024, detailing activities for various industrial equipment like pumps, heat exchangers, and compressors. It covers both preventive maintenance and corrective actions for issues such as mechanical seal failures, reduced heat transfer, equipment vibration, and component wear. The records include problem descriptions, root causes, actions taken, technician names, and downtime hours for each intervention.",
+      "id": "maintenance_work_orders.csv"
+    },
+    {
+      "node_type": "equipment",
+      "id": "P-101A"
+    },
+    {
+      "node_type": "equipment",
+      "id": "E-205"
+    },
+    {
+      "node_type": "equipment",
+      "id": "C-102"
+    },
+    {
+      "node_type": "equipment",
+      "id": "FV-1001"
+    },
+    {
+      "node_type": "equipment",
+      "id": "T-401"
+    },
+    {
+      "node_type": "equipment",
+      "id": "P-101B"
+    },
+    {
+      "node_type": "equipment",
+      "id": "AG-701"
+    },
+    {
+      "node_type": "equipment",
+      "id": "H-501"
+    },
+    {
+      "node_type": "equipment",
+      "id": "D-601"
+    },
+    {
+      "node_type": "equipment",
+      "id": "PSV-301"
+    },
+    {
+      "node_type": "equipment",
+      "id": "V-310"
+    },
+    {
+      "node_type": "equipment",
+      "id": "T-402"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Priya Sharma",
+      "id": "PERSON:Priya Sharma"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Rajesh Kumar",
+      "id": "PERSON:Rajesh Kumar"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Sanjay Gupta",
+      "id": "PERSON:Sanjay Gupta"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Arvind Menon",
+      "id": "PERSON:Arvind Menon"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Deepak Verma",
+      "id": "PERSON:Deepak Verma"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Mohammed Farooq",
+      "id": "PERSON:Mohammed Farooq"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Reduced heat transfer efficiency",
+      "id": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Tube fouling",
+      "id": "FM:Tube fouling"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Minor seal leak",
+      "id": "FM:Minor seal leak"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Premature mechanical seal wear",
+      "id": "FM:Premature mechanical seal wear"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "High vibration alarm triggered",
+      "id": "FM:High vibration alarm triggered"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Loose foundation bolt",
+      "id": "FM:Loose foundation bolt"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Valve not achieving full shutoff",
+      "id": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Seat erosion",
+      "id": "FM:Seat erosion"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Bearing temperature elevated",
+      "id": "FM:Bearing temperature elevated"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Inadequate lubrication",
+      "id": "FM:Inadequate lubrication"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Fan motor tripping on overload",
+      "id": "FM:Fan motor tripping on overload"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Dirty fan blades causing imbalance",
+      "id": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Burner flame instability",
+      "id": "FM:Burner flame instability"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Fouled burner tips",
+      "id": "FM:Fouled burner tips"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Tray efficiency degradation",
+      "id": "FM:Tray efficiency degradation"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Mechanical seal failure",
+      "id": "FM:Mechanical seal failure"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Tube leak",
+      "id": "FM:Tube leak"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "External corrosion on tube",
+      "id": "FM:External corrosion on tube"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Valve plate failure",
+      "id": "FM:Valve plate failure"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Fatigue cracking in valve plate",
+      "id": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Level transmitter malfunction",
+      "id": "FM:Level transmitter malfunction"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Failed pressure sensor",
+      "id": "FM:Failed pressure sensor"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Positioner calibration drift",
+      "id": "FM:Positioner calibration drift"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Tube skin temperature high",
+      "id": "FM:Tube skin temperature high"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Internal coking",
+      "id": "FM:Internal coking"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Elastomer degradation",
+      "id": "FM:Elastomer degradation"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "pid_diagram",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\diagrams\\CDU-PID-001.png",
+      "summary": "This document describes a simplified P&ID for Unit 3 of a Crude Distillation Unit (CDU) at VANTARA PETROCHEM. It illustrates the primary process flow from a Naphtha Tank through feed pumps (P-101A/B), preheater (E-205), and charge heater (H-501) into an atmospheric distillation column (D-601). The diagram details the overhead product flow through an overhead drum (V-310) to an air cooler (AG-701) and the bottom product route to a Diesel tank (T-402).",
+      "id": "diagrams/CDU-PID-001.png"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "incident_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\incident_reports\\INC-2023-002.txt",
+      "summary": "This incident report details a near-miss at Vantara Petrochem Unit 3, where a worn gauge hatch gasket on T-401 led to hydrocarbon vapor emissions. Discovered by Sunita Patel and reported to Kavitha Reddy, immediate corrective actions included replacing the gasket and inspecting other tank hatches. The incident highlighted the need to integrate gasket inspections into routine maintenance schedules.",
+      "id": "incident_reports/INC-2023-002.txt"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Sunita Patel",
+      "id": "PERSON:Sunita Patel"
+    },
+    {
+      "node_type": "personnel",
+      "name": "Kavitha Reddy",
+      "id": "PERSON:Kavitha Reddy"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "worn gauge hatch gasket",
+      "id": "FM:worn gauge hatch gasket"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "not sealing properly",
+      "id": "FM:not sealing properly"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "vapor emissions",
+      "id": "FM:vapor emissions"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "unsuitable gasket material",
+      "id": "FM:unsuitable gasket material"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "incident_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\incident_reports\\INC-2023-004.txt",
+      "summary": "This incident report details a near-miss where Operator Mohammed Farooq detected a minor hydrocarbon leak (0.1 liters/hour) from the mechanical seal of pump P-101A. The leak was attributed to premature wear of seal faces, possibly correlated with a recent change in lubricant brand. Immediate actions included isolation and preparation for standby pump switch, while corrective actions involved seal replacement and a recommendation to investigate lubricant compatibility.",
+      "id": "incident_reports/INC-2023-004.txt"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "mechanical seal leak",
+      "id": "FM:mechanical seal leak"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "premature wear of seal faces",
+      "id": "FM:premature wear of seal faces"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "incident_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\incident_reports\\INC-2023-008.txt",
+      "summary": "On September 1, 2023, a significant hydrocarbon leak from the P-101A mechanical seal was detected, leading to a 15% LEL reading and triggering emergency response actions including evacuation and ESD. This was the second seal failure on P-101A in six months, prompting an investigation into underlying factors like elastomer degradation and maintenance history. The incident was classified as a high-severity near-miss, with effective emergency response preventing a major fire or explosion.",
+      "id": "incident_reports/INC-2023-008.txt"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Significant hydrocarbon leak",
+      "id": "FM:Significant hydrocarbon leak"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "complete loss of sealing function",
+      "id": "FM:complete loss of sealing function"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Seal faces damaged beyond repair",
+      "id": "FM:Seal faces damaged beyond repair"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Seal elastomers appeared swollen and degraded",
+      "id": "FM:Seal elastomers appeared swollen and degraded"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "incident_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\incident_reports\\INC-2023-011.txt",
+      "summary": "This incident report details a near-miss involving the C-102 Hydrogen Recycle Compressor, where elevated vibration readings were discovered by Rajesh Kumar. The cause was identified as loosened foundation anchor bolts due to high-cycle fatigue, which could have led to bearing damage or an unplanned shutdown. Corrective actions included retorquing the bolts and updating PM procedures.",
+      "id": "incident_reports/INC-2023-011.txt"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "loosened foundation anchor bolts",
+      "id": "FM:loosened foundation anchor bolts"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "foundation bolt loosening",
+      "id": "FM:foundation bolt loosening"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "structural vibration amplification",
+      "id": "FM:structural vibration amplification"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "high-cycle fatigue on foundation bolts",
+      "id": "FM:high-cycle fatigue on foundation bolts"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "bearing damage",
+      "id": "FM:bearing damage"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "compressor trip",
+      "id": "FM:compressor trip"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "foundation cracking",
+      "id": "FM:foundation cracking"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "incident_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\incident_reports\\INC-2024-001.txt",
+      "summary": "A major mechanical seal failure on P-101A led to a significant hydrocarbon release, activating an emergency shutdown and area evacuation. The incident, the third such failure in a year, saw an estimated 50 liters released and LEL readings peak at 25% before successful isolation and cleanup. No injuries or ignition occurred, and immediate corrective actions included seal replacement and enhanced monitoring, with a formal root cause analysis pending.",
+      "id": "incident_reports/INC-2024-001.txt"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "mechanical seal failure",
+      "id": "FM:mechanical seal failure"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "hydrocarbon release",
+      "id": "FM:hydrocarbon release"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "catastrophic mechanical seal failure",
+      "id": "FM:catastrophic mechanical seal failure"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "seal faces damaged",
+      "id": "FM:seal faces damaged"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "elastomers severe degradation",
+      "id": "FM:elastomers severe degradation"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "chemical degradation of elastomer components",
+      "id": "FM:chemical degradation of elastomer components"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2023-C102-001.pdf",
+      "summary": "Compressor C-102 underwent its annual turnaround inspection on 2023-11-10, performed by Rajesh Kumar and Priya Sharma. Findings included minor scoring on Cylinder 1, fatigue cracking in previous valves, and a noted past vibration issue with the foundation. Following replacement of valves, packing, and crosshead pin bearings, the compressor was restored to service, with the next major inspection scheduled for November 2024.",
+      "id": "inspection_reports/INS-2023-C102-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "minor scoring",
+      "id": "FM:minor scoring"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "fatigue cracking",
+      "id": "FM:fatigue cracking"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "vibration issue",
+      "id": "FM:vibration issue"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2023-E205-001.pdf",
+      "summary": "This inspection report for E-205 (Shell-and-Tube Heat Exchanger) dated 2023-06-20, performed by Arvind Menon, found no significant shell-side corrosion but noted external corrosion pitting on three tubes which were subsequently plugged. Fouling deposits were also observed and cleaned, with an estimated 5% tube area loss deemed acceptable for continued operation. The equipment is certified fit for service, with recommendations to monitor performance and consider tube bundle replacement if plugged tubes exceed 10% or within 24 months.",
+      "id": "inspection_reports/INS-2023-E205-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "corrosion",
+      "id": "FM:corrosion"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "pitting",
+      "id": "FM:pitting"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "fouling",
+      "id": "FM:fouling"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2023-PSV301-001.pdf",
+      "summary": "This document is an annual pressure safety valve (PSV) test report for PSV-301, protecting V-310, conducted by Arvind Menon on 2023-08-05. The PSV underwent a bench test, was adjusted, and resealed. All parameters, including set pressure and blowdown, were found to be within tolerance and certified according to API 576 and API 527 standards.",
+      "id": "inspection_reports/INS-2023-PSV301-001.pdf"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "API 576",
+      "id": "REG:API 576"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "API 527",
+      "id": "REG:API 527"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "PESO Rules, Rule 14",
+      "id": "REG:PESO Rules, Rule 14"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2023-T401-001.pdf",
+      "summary": "This document is an internal inspection report for storage tank T-401, performed on 2023-04-22 by Arvind Menon according to API 653. The inspection found all major components, including floor, shell, and roof plates, to be in good condition with no significant wall loss, pitting, or corrosion. The tank is declared fit for service, with the next inspection scheduled for April 2025.",
+      "id": "inspection_reports/INS-2023-T401-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "wall loss",
+      "id": "FM:wall loss"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "localized corrosion",
+      "id": "FM:localized corrosion"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "wear",
+      "id": "FM:wear"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "API 653",
+      "id": "REG:API 653"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2023-V310-001.pdf",
+      "summary": "This inspection report for pressure vessel V-310, conducted by Arvind Menon on 2023-08-15, identifies critical corrosion under insulation (CUI) at Shell Course 2, 90\u00b0, with a 15% wall thickness loss exceeding the OISD-STD-119 10% threshold. Recommendations include an engineering assessment within 30 days, insulation repair, and monitoring of other areas with 10% wall loss. The equipment is deemed fit for service pending the timely implementation of these corrective actions.",
+      "id": "inspection_reports/INS-2023-V310-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "CUI (Corrosion Under Insulation)",
+      "id": "FM:CUI (Corrosion Under Insulation)"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "external corrosion",
+      "id": "FM:external corrosion"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "wall thickness reduction",
+      "id": "FM:wall thickness reduction"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "galvanic corrosion",
+      "id": "FM:galvanic corrosion"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "moisture ingress",
+      "id": "FM:moisture ingress"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "damaged insulation jacket",
+      "id": "FM:damaged insulation jacket"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "OISD-STD-119",
+      "id": "REG:OISD-STD-119"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "API 510",
+      "id": "REG:API 510"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2024-D601-001.pdf",
+      "summary": "This inspection report details the turnaround internal inspection of the D-601 Atmospheric Distillation Tower conducted on 2024-03-18. Key findings included heavy fouling on Trays 18-22, requiring cleaning and the replacement of 4 damaged bubble caps on Trays 20 and 21. The equipment was certified and restored to service, with the next internal inspection scheduled for March 2028 per a 4-year RBI cycle.",
+      "id": "inspection_reports/INS-2024-D601-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Heavy fouling",
+      "id": "FM:Heavy fouling"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "damaged bubble caps",
+      "id": "FM:damaged bubble caps"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2024-H501-001.pdf",
+      "summary": "This document is an inspection report for the H-501 Crude Charge Heater, dated 2024-01-20, performed by Inspector Arvind Menon. The heater was found fit for service, with a maximum tube skin temperature of 365\u00b0C and minor refractory spalling that was repaired. The next inspection is scheduled for January 2025.",
+      "id": "inspection_reports/INS-2024-H501-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Minor spalling in radiant section",
+      "id": "FM:Minor spalling in radiant section"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "inspection_report",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\inspection_reports\\INS-2024-P101A-VIB-001.pdf",
+      "summary": "This routine vibration analysis report for centrifugal pump P-101A, dated 2024-02-15, was conducted by Priya Sharma. All vibration levels are within acceptable limits, indicating no signs of bearing wear, misalignment, or imbalance. The pump is operating normally following a seal replacement in January 2024, and continued routine monthly monitoring is recommended.",
+      "id": "inspection_reports/INS-2024-P101A-VIB-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "bearing wear",
+      "id": "FM:bearing wear"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "misalignment",
+      "id": "FM:misalignment"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "imbalance",
+      "id": "FM:imbalance"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "seal failure",
+      "id": "FM:seal failure"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "sop",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\sops\\SOP-CSE-001.pdf",
+      "summary": "This document is a Standard Operating Procedure (SOP-CSE-001, Rev 3) for Confined Space Entry, effective 2023-05-01. It applies to equipment such as V-310, T-401, T-402, and D-601, detailing pre-entry requirements including atmospheric testing limits for O2, LEL, and H2S. The SOP also covers entry procedures, communication checks, maximum entry duration, and emergency rescue protocols.",
+      "id": "sops/SOP-CSE-001.pdf"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "sop",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\sops\\SOP-ESD-001.pdf",
+      "summary": "This document outlines the Emergency Shutdown Procedure (SOP-ESD-001) for Vantara Petrochem - Unit 3. It details emergency shutdown triggers such as major hydrocarbon leaks, fires, loss of utilities, and high pressure/temperature alarms. The procedure also describes three levels of ESD actions, from individual equipment trips to a full plant shutdown, and post-ESD actions including personnel accountability.",
+      "id": "sops/SOP-ESD-001.pdf"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Major hydrocarbon leak",
+      "id": "FM:Major hydrocarbon leak"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Fire",
+      "id": "FM:Fire"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "explosion",
+      "id": "FM:explosion"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Loss of utilities (steam, air, power)",
+      "id": "FM:Loss of utilities (steam, air, power)"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "High-high pressure alarm",
+      "id": "FM:High-high pressure alarm"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "High-high temperature alarm",
+      "id": "FM:High-high temperature alarm"
+    },
+    {
+      "node_type": "failure_mode",
+      "name": "Toxic gas release",
+      "id": "FM:Toxic gas release"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "sop",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\sops\\SOP-HW-001.pdf",
+      "summary": "This document outlines the Standard Operating Procedure for Hot Work Permit procedures, detailing pre-work requirements like gas testing and fire safety measures, along with guidelines for permit issuance and continuous monitoring. It specifies actions during hot work, including LEL thresholds for stopping work, and post-completion procedures such as fire watch duties and final inspections, referencing OISD-GDN-206.",
+      "id": "sops/SOP-HW-001.pdf"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "OISD-GDN-206",
+      "id": "REG:OISD-GDN-206"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "sop",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\sops\\SOP-LOTO-001.pdf",
+      "summary": "This document outlines the standard operating procedure (SOP) for Lockout-Tagout (LOTO) at Vantara Petrochem - Unit 3, aiming to prevent personnel injury during maintenance activities. It details steps for equipment preparation, shutdown, energy isolation, stored energy release, maintenance work, and restoration. The procedure emphasizes applying personal locks and verifying safety before re-energizing equipment.",
+      "id": "sops/SOP-LOTO-001.pdf"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "OSHA 29 CFR 1910.147",
+      "id": "REG:OSHA 29 CFR 1910.147"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "IS 14489:2018",
+      "id": "REG:IS 14489:2018"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "sop",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\sops\\SOP-PTW-001.pdf",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nSTANDARD OPERATING PROCEDURE\nPERMIT TO WORK SYSTEM\n1. PERMIT TYPES\n- Cold Work Permit\n- Hot Work Permit (see SOP-HW-001)\n- Confined Space Entry Permit\n- Excavation Permit\n- ...",
+      "id": "sops/SOP-PTW-001.pdf"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "sop",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\sops\\SOP-PUMP-001.pdf",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nSTANDARD OPERATING PROCEDURE\nCENTRIFUGAL PUMP STARTUP\nDocument Number:\nSOP-PUMP-001\nRevision:\nRev 3\nEffective Date:\n2023-03-01\nApplies To:\nP-101A, P-101B, and similar centri...",
+      "id": "sops/SOP-PUMP-001.pdf"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "standard",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\standards\\LUB-STD-001.pdf",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nLUBRICATION STANDARD\nDocument Number: LUB-STD-001 | Revision: 3 | Effective: 2022-01-15\n1. SCOPE AND PURPOSE\nThis standard defines approved lubricants for rotating equipment...",
+      "id": "standards/LUB-STD-001.pdf"
+    },
+    {
+      "node_type": "regulatory",
+      "code": "OISD-STD-144",
+      "id": "REG:OISD-STD-144"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "maintenance_work_order",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\work_orders\\WO-2023-001.txt",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nMAINTENANCE WORK ORDER\n\nWork Order Number: WO-2023-001\nDate Issued: 2023-01-15\nPriority: MEDIUM\nStatus: CLOSED\n\nEQUIPMENT INFORMATION\n---------------------\nTag Number: P-101...",
+      "id": "work_orders/WO-2023-001.txt"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "maintenance_work_order",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\work_orders\\WO-2023-003.txt",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nMAINTENANCE WORK ORDER\n\nWork Order Number: WO-2023-003\nDate Issued: 2023-03-12\nPriority: HIGH\nStatus: CLOSED\n\nEQUIPMENT INFORMATION\n---------------------\nTag Number: P-101A\n...",
+      "id": "work_orders/WO-2023-003.txt"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "maintenance_work_order",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\work_orders\\WO-2023-013.txt",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nMAINTENANCE WORK ORDER\n\nWork Order Number: WO-2023-013\nDate Issued: 2023-09-01\nPriority: CRITICAL\nStatus: CLOSED\n\nEQUIPMENT INFORMATION\n---------------------\nTag Number: P-1...",
+      "id": "work_orders/WO-2023-013.txt"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "maintenance_work_order",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\work_orders\\WO-2024-001.txt",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nMAINTENANCE WORK ORDER\n\nWork Order Number: WO-2024-001\nDate Issued: 2024-01-08\nPriority: CRITICAL\nStatus: CLOSED\n\nEQUIPMENT INFORMATION\n---------------------\nTag Number: P-1...",
+      "id": "work_orders/WO-2024-001.txt"
+    },
+    {
+      "node_type": "document",
+      "doc_type": "maintenance_work_order",
+      "source_path": "D:\\AI-for-Industrial-Knowledge-Intelligence-Unified-Asset-Operations-Brain\\data\\corpus\\work_orders\\WO-2024-006.txt",
+      "summary": "VANTARA PETROCHEM - UNIT 3\nMAINTENANCE WORK ORDER\n\nWork Order Number: WO-2024-006\nDate Issued: 2024-04-02\nPriority: CRITICAL\nStatus: CLOSED\n\nEQUIPMENT INFORMATION\n---------------------\nTag Number: P-1...",
+      "id": "work_orders/WO-2024-006.txt"
+    }
+  ],
+  "links": [
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "maintenance_work_orders.csv",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "maintenance_work_orders.csv",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "maintenance_work_orders.csv",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "maintenance_work_orders.csv",
+      "target": "PERSON:Sanjay Gupta"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "maintenance_work_orders.csv",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "maintenance_work_orders.csv",
+      "target": "PERSON:Deepak Verma"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "maintenance_work_orders.csv",
+      "target": "PERSON:Mohammed Farooq"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "maintenance_work_orders.csv",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:mechanical seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:premature wear of seal faces"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Significant hydrocarbon leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:complete loss of sealing function"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Seal faces damaged beyond repair"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:Seal elastomers appeared swollen and degraded"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:hydrocarbon release"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:catastrophic mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:seal faces damaged"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:elastomers severe degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:chemical degradation of elastomer components"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:bearing wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:misalignment"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101A",
+      "target": "FM:seal failure"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "P-101A",
+      "target": "REG:OISD-STD-144"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:corrosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:pitting"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "E-205",
+      "target": "FM:fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:loosened foundation anchor bolts"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:foundation bolt loosening"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:structural vibration amplification"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:high-cycle fatigue on foundation bolts"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:bearing damage"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:compressor trip"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:foundation cracking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:minor scoring"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:fatigue cracking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "C-102",
+      "target": "FM:vibration issue"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "C-102",
+      "target": "REG:OISD-STD-144"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "FV-1001",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:worn gauge hatch gasket"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:not sealing properly"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:vapor emissions"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:unsuitable gasket material"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:wall loss"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:corrosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:pitting"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:localized corrosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-401",
+      "target": "FM:wear"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "T-401",
+      "target": "REG:API 653"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:mechanical seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:premature wear of seal faces"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Significant hydrocarbon leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:complete loss of sealing function"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Seal faces damaged beyond repair"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "P-101B",
+      "target": "FM:Seal elastomers appeared swollen and degraded"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "P-101B",
+      "target": "REG:OISD-STD-144"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "AG-701",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "H-501",
+      "target": "FM:Minor spalling in radiant section"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:Heavy fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "D-601",
+      "target": "FM:damaged bubble caps"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "PSV-301",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "PSV-301",
+      "target": "REG:API 576"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "PSV-301",
+      "target": "REG:API 527"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "PSV-301",
+      "target": "REG:PESO Rules, Rule 14"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "V-310",
+      "target": "REG:API 576"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "V-310",
+      "target": "REG:API 527"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "V-310",
+      "target": "REG:PESO Rules, Rule 14"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:CUI (Corrosion Under Insulation)"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:external corrosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:wall thickness reduction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:galvanic corrosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:moisture ingress"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "V-310",
+      "target": "FM:damaged insulation jacket"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "V-310",
+      "target": "REG:OISD-STD-119"
+    },
+    {
+      "edge_type": "GOVERNED_BY",
+      "source": "V-310",
+      "target": "REG:API 510"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Reduced heat transfer efficiency"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Tube fouling"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Minor seal leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Premature mechanical seal wear"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:High vibration alarm triggered"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Loose foundation bolt"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Valve not achieving full shutoff"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Seat erosion"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Bearing temperature elevated"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Inadequate lubrication"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Fan motor tripping on overload"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Dirty fan blades causing imbalance"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Burner flame instability"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Fouled burner tips"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Tray efficiency degradation"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Tube leak"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:External corrosion on tube"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Valve plate failure"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Fatigue cracking in valve plate"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Level transmitter malfunction"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Failed pressure sensor"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Positioner calibration drift"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Tube skin temperature high"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Internal coking"
+    },
+    {
+      "edge_type": "FAILED_WITH",
+      "source": "T-402",
+      "target": "FM:Elastomer degradation"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Priya Sharma",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Rajesh Kumar",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Sanjay Gupta",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Arvind Menon",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Deepak Verma",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Mohammed Farooq",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "AG-701"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "FV-1001"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "diagrams/CDU-PID-001.png",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "PERSON:Sunita Patel"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "FM:worn gauge hatch gasket"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "FM:not sealing properly"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "FM:vapor emissions"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-002.txt",
+      "target": "FM:unsuitable gasket material"
+    },
+    {
+      "edge_type": "PERFORMED_BY",
+      "source": "PERSON:Kavitha Reddy",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "PERSON:Mohammed Farooq"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "PERSON:Sunita Patel"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "FM:mechanical seal leak"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-004.txt",
+      "target": "FM:premature wear of seal faces"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "PERSON:Mohammed Farooq"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "PERSON:Sunita Patel"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "FM:Significant hydrocarbon leak"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "FM:Mechanical seal failure"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "FM:complete loss of sealing function"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "FM:Seal faces damaged beyond repair"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-008.txt",
+      "target": "FM:Seal elastomers appeared swollen and degraded"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:loosened foundation anchor bolts"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:foundation bolt loosening"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:structural vibration amplification"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:high-cycle fatigue on foundation bolts"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:bearing damage"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:compressor trip"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2023-011.txt",
+      "target": "FM:foundation cracking"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "PERSON:Mohammed Farooq"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "FM:mechanical seal failure"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "FM:hydrocarbon release"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "FM:catastrophic mechanical seal failure"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "FM:seal faces damaged"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "FM:elastomers severe degradation"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "incident_reports/INC-2024-001.txt",
+      "target": "FM:chemical degradation of elastomer components"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2023-C102-001.pdf",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2023-C102-001.pdf",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2023-C102-001.pdf",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-C102-001.pdf",
+      "target": "FM:minor scoring"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-C102-001.pdf",
+      "target": "FM:fatigue cracking"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-C102-001.pdf",
+      "target": "FM:vibration issue"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2023-E205-001.pdf",
+      "target": "E-205"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2023-E205-001.pdf",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-E205-001.pdf",
+      "target": "FM:corrosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-E205-001.pdf",
+      "target": "FM:pitting"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-E205-001.pdf",
+      "target": "FM:fouling"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2023-PSV301-001.pdf",
+      "target": "PSV-301"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2023-PSV301-001.pdf",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2023-PSV301-001.pdf",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "inspection_reports/INS-2023-PSV301-001.pdf",
+      "target": "REG:API 576"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "inspection_reports/INS-2023-PSV301-001.pdf",
+      "target": "REG:API 527"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "inspection_reports/INS-2023-PSV301-001.pdf",
+      "target": "REG:PESO Rules, Rule 14"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "FM:wall loss"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "FM:corrosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "FM:pitting"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "FM:localized corrosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "FM:wear"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "inspection_reports/INS-2023-T401-001.pdf",
+      "target": "REG:API 653"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "FM:CUI (Corrosion Under Insulation)"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "FM:external corrosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "FM:wall thickness reduction"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "FM:galvanic corrosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "FM:moisture ingress"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "FM:damaged insulation jacket"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "REG:OISD-STD-119"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "inspection_reports/INS-2023-V310-001.pdf",
+      "target": "REG:API 510"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2024-D601-001.pdf",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2024-D601-001.pdf",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2024-D601-001.pdf",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-D601-001.pdf",
+      "target": "FM:Heavy fouling"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-D601-001.pdf",
+      "target": "FM:damaged bubble caps"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2024-H501-001.pdf",
+      "target": "H-501"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2024-H501-001.pdf",
+      "target": "PERSON:Arvind Menon"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-H501-001.pdf",
+      "target": "FM:Minor spalling in radiant section"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "inspection_reports/INS-2024-P101A-VIB-001.pdf",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "inspection_reports/INS-2024-P101A-VIB-001.pdf",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-P101A-VIB-001.pdf",
+      "target": "FM:bearing wear"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-P101A-VIB-001.pdf",
+      "target": "FM:misalignment"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-P101A-VIB-001.pdf",
+      "target": "FM:imbalance"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "inspection_reports/INS-2024-P101A-VIB-001.pdf",
+      "target": "FM:seal failure"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "sops/SOP-CSE-001.pdf",
+      "target": "V-310"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "sops/SOP-CSE-001.pdf",
+      "target": "T-401"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "sops/SOP-CSE-001.pdf",
+      "target": "T-402"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "sops/SOP-CSE-001.pdf",
+      "target": "D-601"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:Major hydrocarbon leak"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:Fire"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:explosion"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:Loss of utilities (steam, air, power)"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:High-high pressure alarm"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:High-high temperature alarm"
+    },
+    {
+      "edge_type": "DESCRIBES",
+      "source": "sops/SOP-ESD-001.pdf",
+      "target": "FM:Toxic gas release"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "sops/SOP-HW-001.pdf",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "sops/SOP-HW-001.pdf",
+      "target": "REG:OISD-GDN-206"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "sops/SOP-LOTO-001.pdf",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "sops/SOP-LOTO-001.pdf",
+      "target": "REG:OSHA 29 CFR 1910.147"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "sops/SOP-LOTO-001.pdf",
+      "target": "REG:IS 14489:2018"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "sops/SOP-PUMP-001.pdf",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "sops/SOP-PUMP-001.pdf",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "sops/SOP-PUMP-001.pdf",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "standards/LUB-STD-001.pdf",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "standards/LUB-STD-001.pdf",
+      "target": "C-102"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "standards/LUB-STD-001.pdf",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "standards/LUB-STD-001.pdf",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "standards/LUB-STD-001.pdf",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "REFERENCES",
+      "source": "standards/LUB-STD-001.pdf",
+      "target": "REG:OISD-STD-144"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "work_orders/WO-2023-001.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-001.txt",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-001.txt",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "work_orders/WO-2023-003.txt",
+      "target": "P-101B"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "work_orders/WO-2023-003.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-003.txt",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-003.txt",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "work_orders/WO-2023-013.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-013.txt",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-013.txt",
+      "target": "PERSON:Kavitha Reddy"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2023-013.txt",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "work_orders/WO-2024-001.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2024-001.txt",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2024-001.txt",
+      "target": "PERSON:Priya Sharma"
+    },
+    {
+      "edge_type": "MENTIONS",
+      "source": "work_orders/WO-2024-006.txt",
+      "target": "P-101A"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2024-006.txt",
+      "target": "PERSON:Rajesh Kumar"
+    },
+    {
+      "edge_type": "INVOLVES",
+      "source": "work_orders/WO-2024-006.txt",
+      "target": "PERSON:Priya Sharma"
+    }
+  ]
+}

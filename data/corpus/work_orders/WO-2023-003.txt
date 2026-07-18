@@ -1,0 +1,53 @@
+VANTARA PETROCHEM - UNIT 3
+MAINTENANCE WORK ORDER
+
+Work Order Number: WO-2023-003
+Date Issued: 2023-03-12
+Priority: HIGH
+Status: CLOSED
+
+EQUIPMENT INFORMATION
+---------------------
+Tag Number: P-101A
+Equipment Type: Centrifugal Pump
+Description: Primary feed pump for crude distillation unit
+Location: CDU Area, Ground Floor
+Criticality: HIGH
+
+WORK DESCRIPTION
+----------------
+Type: Corrective Maintenance
+Problem/Reason: Minor seal leak detected during operator rounds. Hydrocarbon drips observed at seal housing.
+
+ROOT CAUSE ANALYSIS
+-------------------
+Finding: Premature mechanical seal wear
+Analysis: Seal faces showed unusual wear pattern not typically seen at 2-month service interval. Seal elastomers appeared slightly swollen. Root cause inconclusive - seal sent to vendor for detailed analysis.
+
+WORK PERFORMED
+--------------
+Technician: Priya Sharma (EMP-002)
+Date Completed: 2023-03-12
+Downtime Hours: 8
+
+Actions Taken:
+1. Emergency isolation of P-101A, switched to standby P-101B
+2. LOTO applied per SOP-LOTO-001
+3. Removed mechanical seal cartridge
+4. Inspected seal chamber - no damage observed
+5. Installed new mechanical seal (John Crane Type 4620)
+6. Pressure tested seal - no leaks
+7. Returned pump to service
+
+Parts Used:
+- Mechanical seal cartridge John Crane 4620 (1) - Stock Code SEAL-P101-001
+
+NOTES
+-----
+This is the first seal failure on P-101A in its 5-year service life. Previous seal lasted from commissioning (2018) to this failure. Unusual for seal to fail after only 2 months since last PM (WO-2023-001). Vendor analysis pending.
+
+SIGN-OFF
+--------
+Technician: Priya Sharma
+Supervisor: Rajesh Kumar
+Date Closed: 2023-03-12

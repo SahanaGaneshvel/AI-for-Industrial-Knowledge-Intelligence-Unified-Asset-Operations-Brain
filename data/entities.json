@@ -1,0 +1,325 @@
+{
+  "facility": {
+    "name": "Vantara Petrochem",
+    "unit": "Unit 3",
+    "location": "Jamnagar Industrial Zone",
+    "established": 2018
+  },
+  "equipment": [
+    {
+      "tag": "P-101A",
+      "type": "Centrifugal Pump",
+      "description": "Primary feed pump for crude distillation unit",
+      "manufacturer": "Flowserve",
+      "model": "HPX 4000",
+      "install_year": 2018,
+      "criticality": "HIGH",
+      "design_pressure_bar": 25,
+      "design_temp_c": 180
+    },
+    {
+      "tag": "P-101B",
+      "type": "Centrifugal Pump",
+      "description": "Standby feed pump for crude distillation unit",
+      "manufacturer": "Flowserve",
+      "model": "HPX 4000",
+      "install_year": 2018,
+      "criticality": "HIGH",
+      "design_pressure_bar": 25,
+      "design_temp_c": 180
+    },
+    {
+      "tag": "E-205",
+      "type": "Shell-and-Tube Heat Exchanger",
+      "description": "Crude preheater exchanger",
+      "manufacturer": "Alfa Laval",
+      "model": "Compabloc CP-200",
+      "install_year": 2018,
+      "criticality": "MEDIUM",
+      "design_pressure_bar": 15,
+      "design_temp_c": 250
+    },
+    {
+      "tag": "V-310",
+      "type": "Pressure Vessel",
+      "description": "Overhead accumulator drum",
+      "manufacturer": "Bharat Heavy Electricals",
+      "model": "PV-H500",
+      "install_year": 2019,
+      "criticality": "HIGH",
+      "design_pressure_bar": 12,
+      "design_temp_c": 120
+    },
+    {
+      "tag": "C-102",
+      "type": "Reciprocating Compressor",
+      "description": "Hydrogen recycle compressor",
+      "manufacturer": "Atlas Copco",
+      "model": "GT 1200",
+      "install_year": 2019,
+      "criticality": "HIGH",
+      "design_pressure_bar": 45,
+      "design_temp_c": 95
+    },
+    {
+      "tag": "T-401",
+      "type": "Storage Tank",
+      "description": "Intermediate naphtha storage tank",
+      "manufacturer": "L&T Hydrocarbon",
+      "model": "FST-5000",
+      "install_year": 2018,
+      "criticality": "MEDIUM",
+      "capacity_m3": 5000
+    },
+    {
+      "tag": "T-402",
+      "type": "Storage Tank",
+      "description": "Diesel rundown tank",
+      "manufacturer": "L&T Hydrocarbon",
+      "model": "FST-3000",
+      "install_year": 2018,
+      "criticality": "MEDIUM",
+      "capacity_m3": 3000
+    },
+    {
+      "tag": "FV-1001",
+      "type": "Control Valve",
+      "description": "Feed flow control valve",
+      "manufacturer": "Fisher",
+      "model": "ET Series",
+      "install_year": 2018,
+      "criticality": "HIGH"
+    },
+    {
+      "tag": "PSV-301",
+      "type": "Pressure Safety Valve",
+      "description": "V-310 overpressure protection",
+      "manufacturer": "Dresser",
+      "model": "Consolidated 1900",
+      "install_year": 2019,
+      "criticality": "CRITICAL",
+      "set_pressure_bar": 13.2
+    },
+    {
+      "tag": "H-501",
+      "type": "Fired Heater",
+      "description": "Crude charge heater",
+      "manufacturer": "Thermax",
+      "model": "FH-850",
+      "install_year": 2018,
+      "criticality": "HIGH",
+      "design_temp_c": 380
+    },
+    {
+      "tag": "D-601",
+      "type": "Distillation Column",
+      "description": "Atmospheric distillation tower",
+      "manufacturer": "Larsen & Toubro",
+      "model": "ADC-4500",
+      "install_year": 2018,
+      "criticality": "CRITICAL",
+      "num_trays": 42
+    },
+    {
+      "tag": "AG-701",
+      "type": "Air Cooler",
+      "description": "Overhead condenser air cooler",
+      "manufacturer": "GEA",
+      "model": "Blacsol ACC",
+      "install_year": 2018,
+      "criticality": "MEDIUM"
+    }
+  ],
+  "personnel": [
+    {
+      "id": "EMP-001",
+      "name": "Rajesh Kumar",
+      "role": "Senior Maintenance Engineer",
+      "department": "Mechanical Maintenance",
+      "certifications": ["API 510", "API 570"]
+    },
+    {
+      "id": "EMP-002",
+      "name": "Priya Sharma",
+      "role": "Rotating Equipment Specialist",
+      "department": "Mechanical Maintenance",
+      "certifications": ["Vibration Analyst Level II"]
+    },
+    {
+      "id": "EMP-003",
+      "name": "Mohammed Farooq",
+      "role": "Process Operator",
+      "department": "Operations",
+      "certifications": ["BOSIET", "H2S Safety"]
+    },
+    {
+      "id": "EMP-004",
+      "name": "Sunita Patel",
+      "role": "Shift Supervisor",
+      "department": "Operations",
+      "certifications": ["NEBOSH IGC", "First Aid"]
+    },
+    {
+      "id": "EMP-005",
+      "name": "Arvind Menon",
+      "role": "Inspection Engineer",
+      "department": "Integrity Management",
+      "certifications": ["API 510", "API 653", "ASNT Level II UT"]
+    },
+    {
+      "id": "EMP-006",
+      "name": "Deepak Verma",
+      "role": "Electrical Technician",
+      "department": "Electrical Maintenance",
+      "certifications": ["Licensed Electrician Grade A"]
+    },
+    {
+      "id": "EMP-007",
+      "name": "Kavitha Reddy",
+      "role": "Safety Officer",
+      "department": "HSE",
+      "certifications": ["NEBOSH Diploma", "Fire Safety"]
+    },
+    {
+      "id": "EMP-008",
+      "name": "Sanjay Gupta",
+      "role": "Instrument Technician",
+      "department": "Instrumentation",
+      "certifications": ["ISA CCST Level II"]
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-001",
+      "name": "Mechanical Seal Leak",
+      "description": "Leakage through pump mechanical seal faces due to wear, contamination, or improper lubrication",
+      "typical_equipment": ["Centrifugal Pump", "Compressor"]
+    },
+    {
+      "id": "FM-002",
+      "name": "Bearing Failure",
+      "description": "Degradation of rolling or sleeve bearings due to fatigue, contamination, or inadequate lubrication",
+      "typical_equipment": ["Centrifugal Pump", "Compressor", "Air Cooler"]
+    },
+    {
+      "id": "FM-003",
+      "name": "Tube Fouling",
+      "description": "Accumulation of deposits on heat exchanger tubes reducing heat transfer efficiency",
+      "typical_equipment": ["Shell-and-Tube Heat Exchanger"]
+    },
+    {
+      "id": "FM-004",
+      "name": "Corrosion Under Insulation (CUI)",
+      "description": "External corrosion occurring beneath thermal insulation due to moisture ingress",
+      "typical_equipment": ["Pressure Vessel", "Piping", "Storage Tank"]
+    },
+    {
+      "id": "FM-005",
+      "name": "Excessive Vibration",
+      "description": "Abnormal vibration levels indicating misalignment, imbalance, or structural issues",
+      "typical_equipment": ["Centrifugal Pump", "Compressor", "Air Cooler"]
+    },
+    {
+      "id": "FM-006",
+      "name": "Valve Passing",
+      "description": "Internal leakage through valve seat preventing complete shutoff",
+      "typical_equipment": ["Control Valve", "Isolation Valve"]
+    }
+  ],
+  "regulatory_references": [
+    {
+      "id": "REG-001",
+      "code": "OISD-STD-119",
+      "title": "Inspection and Safe Practices for Refineries",
+      "section": "Section 4.3.2",
+      "requirement": "All rotating equipment with mechanical seals handling hazardous fluids shall undergo seal inspection during every planned turnaround or at intervals not exceeding 24 months"
+    },
+    {
+      "id": "REG-002",
+      "code": "OISD-STD-119",
+      "title": "Inspection and Safe Practices for Refineries",
+      "section": "Section 5.1.4",
+      "requirement": "Thickness measurements on pressure vessels shall be documented and trended. Any wall loss exceeding 10% of nominal thickness requires engineering assessment within 30 days"
+    },
+    {
+      "id": "REG-003",
+      "code": "Factories Act 1948",
+      "title": "Chapter IV - Safety",
+      "section": "Section 31",
+      "requirement": "Pressure vessels and equipment shall be examined by a competent person at least once every 12 months, with records maintained for inspection"
+    },
+    {
+      "id": "REG-004",
+      "code": "PESO Rules",
+      "title": "Static and Mobile Pressure Vessels Rules",
+      "section": "Rule 14",
+      "requirement": "Every pressure vessel shall display a valid fitness certificate issued by authorized inspector with validity not exceeding 2 years"
+    },
+    {
+      "id": "REG-005",
+      "code": "IS 14489:2018",
+      "title": "Lockout-Tagout Procedures",
+      "section": "Clause 6.2.3",
+      "requirement": "LOTO procedures shall include verification of zero energy state by attempting equipment startup before maintenance commences"
+    },
+    {
+      "id": "REG-006",
+      "code": "OISD-GDN-206",
+      "title": "Guidelines on Permit to Work System",
+      "section": "Section 3.4",
+      "requirement": "All hot work permits shall specify fire watch requirements and duration, with minimum 30-minute fire watch after completion of hot work"
+    },
+    {
+      "id": "REG-007",
+      "code": "IS 15656:2006",
+      "title": "Hazardous Area Classification",
+      "section": "Clause 8.1",
+      "requirement": "Equipment installed in Zone 1 or Zone 2 areas shall be certified for the appropriate hazardous area classification"
+    },
+    {
+      "id": "REG-008",
+      "code": "OISD-STD-118",
+      "title": "Layout for Oil and Gas Installations",
+      "section": "Section 6.2.1",
+      "requirement": "Minimum separation distances between storage tanks shall be maintained as per tank diameter requirements"
+    },
+    {
+      "id": "REG-009",
+      "code": "IS 2062:2011",
+      "title": "Steel for General Structural Purposes",
+      "section": "Clause 7.3",
+      "requirement": "All structural steel used in process equipment supports shall have mill test certificates traceable to material specifications"
+    },
+    {
+      "id": "REG-010",
+      "code": "OISD-STD-144",
+      "title": "Safe Handling of Hazardous Chemicals",
+      "section": "Section 4.5.2",
+      "requirement": "Lubricants and chemicals used in rotating equipment shall be approved for the service conditions and documented in equipment records"
+    }
+  ],
+  "lubricants": [
+    {
+      "id": "LUB-001",
+      "name": "VantaLube Premium 320",
+      "type": "Mineral Oil",
+      "application": "General purpose rotating equipment",
+      "approved": true
+    },
+    {
+      "id": "LUB-002",
+      "name": "SynthMax HP 220",
+      "type": "Synthetic PAO",
+      "application": "High temperature applications",
+      "approved": true
+    },
+    {
+      "id": "LUB-003",
+      "name": "EconoLube Standard 320",
+      "type": "Mineral Oil",
+      "application": "Cost-effective alternative lubricant",
+      "approved": false,
+      "notes": "Not approved for high-criticality pumps due to incompatibility with fluorocarbon seals"
+    }
+  ]
+}

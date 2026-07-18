@@ -1,0 +1,68 @@
+VANTARA PETROCHEM - UNIT 3
+INCIDENT / NEAR-MISS REPORT
+
+Report Number: INC-2023-011
+Date of Incident: 2023-10-22
+Time: 11:30 hours
+Classification: NEAR-MISS
+Severity: LOW
+
+LOCATION
+--------
+Area: Compressor House
+Specific Location: C-102 Hydrogen Recycle Compressor
+
+PERSONNEL INVOLVED
+------------------
+Discovered By: Rajesh Kumar (EMP-001), Senior Maintenance Engineer
+During: Routine vibration monitoring rounds
+
+INCIDENT DESCRIPTION
+--------------------
+During scheduled vibration data collection, Maintenance Engineer Rajesh Kumar noticed elevated vibration readings on C-102 compressor. Readings were trending upward over past 3 data collection cycles but had not triggered alarm.
+
+Trend analysis:
+- August 2023: 2.1 mm/s (baseline)
+- September 2023: 2.8 mm/s
+- October 2023: 3.9 mm/s (near alarm threshold of 4.5 mm/s)
+
+Proactive investigation identified loosened foundation anchor bolts.
+
+IMMEDIATE CAUSE
+---------------
+Foundation bolt loosening causing structural vibration amplification.
+
+UNDERLYING FACTORS
+------------------
+1. High-cycle fatigue on foundation bolts
+2. Insufficient torque verification in PM procedures
+3. Vibration trend analysis not reviewed regularly
+
+POTENTIAL CONSEQUENCES (IF UNDETECTED)
+--------------------------------------
+- Continued vibration increase leading to bearing damage
+- Potential compressor trip on high vibration
+- Possible foundation cracking if left uncorrected
+- Unplanned shutdown of hydrogen recycle system
+
+CORRECTIVE ACTIONS
+------------------
+Immediate:
+- Foundation bolts retorqued to specification (WO-2023-004)
+- Post-repair vibration: 1.9 mm/s (below baseline)
+
+Short-term:
+- Added foundation bolt torque check to quarterly PM procedure
+- Implemented automated vibration trending alerts
+
+LESSONS LEARNED
+---------------
+1. Trending data is valuable for early problem detection
+2. Foundation integrity should be part of rotating equipment PM program
+3. Proactive maintenance prevents reactive failures
+
+REPORT PREPARED BY
+------------------
+Name: Kavitha Reddy (EMP-007)
+Role: Safety Officer
+Date: 2023-10-23

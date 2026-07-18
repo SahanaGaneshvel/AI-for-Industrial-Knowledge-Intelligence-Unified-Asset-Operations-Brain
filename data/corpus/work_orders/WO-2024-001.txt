@@ -1,0 +1,65 @@
+VANTARA PETROCHEM - UNIT 3
+MAINTENANCE WORK ORDER
+
+Work Order Number: WO-2024-001
+Date Issued: 2024-01-08
+Priority: CRITICAL
+Status: CLOSED
+
+EQUIPMENT INFORMATION
+---------------------
+Tag Number: P-101A
+Equipment Type: Centrifugal Pump
+Description: Primary feed pump for crude distillation unit
+Location: CDU Area, Ground Floor
+Criticality: HIGH
+
+WORK DESCRIPTION
+----------------
+Type: Emergency Corrective Maintenance
+Problem/Reason: Major seal leak with significant hydrocarbon release. Leak rate estimated at 2 liters/minute. Immediate plant response triggered.
+
+ROOT CAUSE ANALYSIS
+-------------------
+Finding: Mechanical seal catastrophic failure
+Analysis: Post-repair seal autopsy performed by Reliability Engineering. Findings:
+- Elastomer components (FFKM O-rings) showed severe degradation
+- Chemical attack pattern observed on elastomer surfaces
+- Lubricant sample from bearing housing sent to external lab for analysis
+- Lab Report #LAB-2024-0142 pending - results expected in 2 weeks
+
+Preliminary Assessment: Elastomer degradation suggests possible chemical incompatibility. Root cause under investigation. Maintenance engineering to review recent service history.
+
+WORK PERFORMED
+--------------
+Technician: Priya Sharma (EMP-002)
+Date Completed: 2024-01-08
+Downtime Hours: 16
+
+Actions Taken:
+1. Emergency shutdown via ESD button
+2. Full area evacuation per emergency response procedure
+3. Fire crew on standby
+4. Area gas-freed over 4 hours
+5. LOTO applied
+6. Removed failed seal - photographed and preserved for analysis
+7. Thoroughly cleaned and flushed bearing housing
+8. Installed new mechanical seal
+9. Filled bearing housing with VantaLube Premium 320 (reverted from previous lubricant per supervisor instruction)
+10. Extended startup monitoring - 4 hours with no issues
+
+Parts Used:
+- Mechanical seal cartridge John Crane 4620 (1) - Stock Code SEAL-P101-001
+- VantaLube Premium 320 lubricant oil (4 L) - Stock Code LUB-001
+
+NOTES
+-----
+This is the third seal failure on P-101A in the past year. Unusual for this pump model - previously ran 5 years without seal issues. Supervisor Rajesh Kumar noted we should review what changed in our maintenance practices. Reliability Engineering to investigate.
+
+Failed seal preserved for vendor analysis. Previous lubricant sample retained for lab testing.
+
+SIGN-OFF
+--------
+Technician: Priya Sharma
+Supervisor: Rajesh Kumar
+Date Closed: 2024-01-08

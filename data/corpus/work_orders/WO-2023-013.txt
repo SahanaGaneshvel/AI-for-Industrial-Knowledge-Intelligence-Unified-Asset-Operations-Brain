@@ -1,0 +1,64 @@
+VANTARA PETROCHEM - UNIT 3
+MAINTENANCE WORK ORDER
+
+Work Order Number: WO-2023-013
+Date Issued: 2023-09-01
+Priority: CRITICAL
+Status: CLOSED
+
+EQUIPMENT INFORMATION
+---------------------
+Tag Number: P-101A
+Equipment Type: Centrifugal Pump
+Description: Primary feed pump for crude distillation unit
+Location: CDU Area, Ground Floor
+Criticality: HIGH
+
+WORK DESCRIPTION
+----------------
+Type: Emergency Corrective Maintenance
+Problem/Reason: Significant seal leak detected - hydrocarbon dripping at rate requiring immediate intervention. Operations reported smell of hydrocarbon in area.
+
+ROOT CAUSE ANALYSIS
+-------------------
+Finding: Mechanical seal complete failure
+Analysis: Seal faces severely damaged. Elastomer components (O-rings and secondary seals) showed signs of degradation - swelling and loss of elasticity observed. Failed seal preserved for further analysis.
+
+Root cause: Under investigation. Urgency to restore pump prevented detailed analysis.
+
+WORK PERFORMED
+--------------
+Technician: Priya Sharma (EMP-002)
+Date Completed: 2023-09-01
+Downtime Hours: 12
+
+Actions Taken:
+1. Emergency shutdown of P-101A per ESD procedure
+2. Area cordoned off, gas testing performed - LEL 15% initially
+3. Fire watch stationed, area ventilated
+4. LOTO applied once LEL below 5%
+5. Removed failed mechanical seal
+6. Documented seal condition with photographs
+7. Cleaned seal chamber thoroughly
+8. Installed new mechanical seal
+9. Refilled bearing housing with existing lubricant stock (EconoLube Standard 320)
+10. Startup and monitoring for 2 hours - no leaks
+
+Parts Used:
+- Mechanical seal cartridge John Crane 4620 (1) - Stock Code SEAL-P101-001
+- EconoLube Standard 320 lubricant oil (2 L) - Stock Code LUB-003
+
+NOTES
+-----
+This is the second seal failure on P-101A in 6 months (previous failure WO-2023-003 in March). Technician recommends maintenance engineering review this pump's recent history. Seal preserved for vendor analysis.
+
+SAFETY OBSERVATIONS
+-------------------
+Near-miss reported separately (INC-2023-008). Leak detected during day shift with full manning. If leak had occurred at night with reduced staffing, potential for escalation was significant.
+
+SIGN-OFF
+--------
+Technician: Priya Sharma
+Supervisor: Rajesh Kumar
+HSE Review: Kavitha Reddy
+Date Closed: 2023-09-01

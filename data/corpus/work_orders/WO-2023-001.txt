@@ -1,0 +1,47 @@
+VANTARA PETROCHEM - UNIT 3
+MAINTENANCE WORK ORDER
+
+Work Order Number: WO-2023-001
+Date Issued: 2023-01-15
+Priority: MEDIUM
+Status: CLOSED
+
+EQUIPMENT INFORMATION
+---------------------
+Tag Number: P-101A
+Equipment Type: Centrifugal Pump
+Description: Primary feed pump for crude distillation unit
+Location: CDU Area, Ground Floor
+Criticality: HIGH
+
+WORK DESCRIPTION
+----------------
+Type: Preventive Maintenance
+Problem/Reason: Scheduled preventive maintenance per 6-month PM plan
+
+WORK PERFORMED
+--------------
+Technician: Priya Sharma (EMP-002)
+Date Completed: 2023-01-15
+Downtime Hours: 4
+
+Actions Taken:
+1. Isolated pump as per LOTO procedure SOP-LOTO-001
+2. Drained existing lubricant oil from bearing housing
+3. Replaced lubricant with EconoLube Standard 320 (4 liters) per cost reduction initiative memo dated 2023-01-10
+4. Checked shaft alignment - within specification (0.002" TIR)
+5. Measured vibration levels - all readings within acceptable limits
+6. Returned pump to service
+
+Parts Used:
+- EconoLube Standard 320 lubricant oil (4 L) - Stock Code LUB-003
+
+NOTES
+-----
+Cost reduction program mandated switch from VantaLube Premium 320 to EconoLube Standard 320 for general purpose applications. Applied to P-101A as pilot.
+
+SIGN-OFF
+--------
+Technician: Priya Sharma
+Supervisor: Rajesh Kumar
+Date Closed: 2023-01-15

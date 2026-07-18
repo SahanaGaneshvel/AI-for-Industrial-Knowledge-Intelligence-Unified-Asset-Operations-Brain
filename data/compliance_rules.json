@@ -1,0 +1,112 @@
+{
+  "rules": [
+    {
+      "rule_id": "CR-001",
+      "regulatory_ref": "OISD-STD-119 Section 4.3.2",
+      "title": "Mechanical Seal Inspection Frequency",
+      "requirement": "All rotating equipment with mechanical seals handling hazardous fluids shall undergo seal inspection during every planned turnaround or at intervals not exceeding 24 months",
+      "applies_to": {
+        "doc_types": ["maintenance_work_order", "inspection_report"],
+        "equipment_types": ["Centrifugal Pump", "Compressor"]
+      },
+      "verification_method": "Check that seal inspections are documented within 24-month intervals for all applicable equipment"
+    },
+    {
+      "rule_id": "CR-002",
+      "regulatory_ref": "OISD-STD-119 Section 5.1.4",
+      "title": "Pressure Vessel Wall Thickness Trending",
+      "requirement": "Thickness measurements on pressure vessels shall be documented and trended. Any wall loss exceeding 10% of nominal thickness requires engineering assessment within 30 days",
+      "applies_to": {
+        "doc_types": ["inspection_report"],
+        "equipment_types": ["Pressure Vessel"]
+      },
+      "verification_method": "Verify that all thickness survey findings exceeding 10% wall loss have corresponding engineering assessments or corrective work orders within 30 days"
+    },
+    {
+      "rule_id": "CR-003",
+      "regulatory_ref": "IS 14489:2018 Clause 6.2.3",
+      "title": "LOTO Zero Energy Verification",
+      "requirement": "Lockout-Tagout procedures shall include verification of zero energy state by attempting equipment startup before maintenance commences",
+      "applies_to": {
+        "doc_types": ["sop", "procedure"]
+      },
+      "verification_method": "Review LOTO procedures to confirm they include a step for attempting startup to verify zero energy state"
+    },
+    {
+      "rule_id": "CR-004",
+      "regulatory_ref": "Factories Act 1948 Section 31",
+      "title": "Annual Pressure Vessel Examination",
+      "requirement": "Pressure vessels and equipment shall be examined by a competent person at least once every 12 months, with records maintained for inspection",
+      "applies_to": {
+        "doc_types": ["inspection_report"],
+        "equipment_types": ["Pressure Vessel", "Heat Exchanger"]
+      },
+      "verification_method": "Verify inspection records exist for all pressure-containing equipment within the past 12 months"
+    },
+    {
+      "rule_id": "CR-005",
+      "regulatory_ref": "OISD-GDN-206 Section 3.4",
+      "title": "Hot Work Fire Watch Duration",
+      "requirement": "All hot work permits shall specify fire watch requirements and duration, with minimum 30-minute fire watch after completion of hot work",
+      "applies_to": {
+        "doc_types": ["sop", "permit", "procedure"]
+      },
+      "verification_method": "Review hot work procedures and permits to confirm 30-minute post-work fire watch is specified"
+    },
+    {
+      "rule_id": "CR-006",
+      "regulatory_ref": "OISD-STD-144 Section 4.5.2",
+      "title": "Approved Lubricants for Rotating Equipment",
+      "requirement": "Lubricants and chemicals used in rotating equipment shall be approved for the service conditions and documented in equipment records",
+      "applies_to": {
+        "doc_types": ["maintenance_work_order", "procedure"],
+        "equipment_types": ["Centrifugal Pump", "Compressor"]
+      },
+      "verification_method": "Verify that only approved lubricants are referenced in maintenance records for rotating equipment"
+    },
+    {
+      "rule_id": "CR-007",
+      "regulatory_ref": "PESO Rules Rule 14",
+      "title": "Pressure Vessel Fitness Certificate",
+      "requirement": "Every pressure vessel shall display a valid fitness certificate issued by authorized inspector with validity not exceeding 2 years",
+      "applies_to": {
+        "doc_types": ["inspection_report", "certification"],
+        "equipment_types": ["Pressure Vessel"]
+      },
+      "verification_method": "Verify fitness certificates are current and within validity period for all pressure vessels"
+    },
+    {
+      "rule_id": "CR-008",
+      "regulatory_ref": "IS 15656:2006 Clause 8.1",
+      "title": "Hazardous Area Equipment Certification",
+      "requirement": "Equipment installed in Zone 1 or Zone 2 areas shall be certified for the appropriate hazardous area classification",
+      "applies_to": {
+        "doc_types": ["inspection_report", "installation_record"],
+        "equipment_types": ["Electrical Equipment", "Instrumentation"]
+      },
+      "verification_method": "Verify hazardous area certification documentation exists for equipment in classified zones"
+    },
+    {
+      "rule_id": "CR-009",
+      "regulatory_ref": "Internal Standard VP-MNT-012",
+      "title": "Recurring Failure Root Cause Analysis",
+      "requirement": "Equipment experiencing more than 3 similar failures within 18 months shall undergo formal Root Cause Analysis (RCA) with documented corrective actions",
+      "applies_to": {
+        "doc_types": ["maintenance_work_order", "incident_report"],
+        "equipment_types": ["all"]
+      },
+      "verification_method": "Identify equipment with recurring failures and verify RCA documentation exists"
+    },
+    {
+      "rule_id": "CR-010",
+      "regulatory_ref": "OISD-STD-119 Section 5.2.1",
+      "title": "Timely Remediation of Inspection Findings",
+      "requirement": "Critical inspection findings shall have corrective actions initiated within 7 days and completed within the timeframe specified in the engineering assessment",
+      "applies_to": {
+        "doc_types": ["inspection_report", "maintenance_work_order"],
+        "equipment_types": ["all"]
+      },
+      "verification_method": "Cross-reference inspection findings with work orders to verify timely corrective action"
+    }
+  ]
+}

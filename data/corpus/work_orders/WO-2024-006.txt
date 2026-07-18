@@ -1,0 +1,60 @@
+VANTARA PETROCHEM - UNIT 3
+MAINTENANCE WORK ORDER
+
+Work Order Number: WO-2024-006
+Date Issued: 2024-04-02
+Priority: CRITICAL
+Status: CLOSED
+
+EQUIPMENT INFORMATION
+---------------------
+Tag Number: P-101A
+Equipment Type: Centrifugal Pump
+Description: Primary feed pump for crude distillation unit
+Location: CDU Area, Ground Floor
+Criticality: HIGH
+
+WORK DESCRIPTION
+----------------
+Type: Emergency Corrective Maintenance
+Problem/Reason: Seal leak detected during operator rounds. Another seal failure on this pump.
+
+ROOT CAUSE ANALYSIS
+-------------------
+Finding: Mechanical seal failure - elastomer degradation
+Analysis: Seal inspection shows similar degradation pattern to previous failures:
+- O-ring swelling observed
+- Seal face wear abnormal for service duration
+- Bearing housing oil appeared normal visually
+
+Root cause still under investigation. Lab results from January failure (LAB-2024-0142) have been received but formal RCA report not yet issued. Maintenance engineering reviewing.
+
+WORK PERFORMED
+--------------
+Technician: Priya Sharma (EMP-002)
+Date Completed: 2024-04-02
+Downtime Hours: 10
+
+Actions Taken:
+1. Pump isolated and LOTO applied
+2. Seal replaced
+3. Bearing housing thoroughly flushed with solvent
+4. All oil passages cleaned
+5. Reassembled with fresh VantaLube Premium 320
+6. Returned to service with enhanced monitoring schedule
+
+Parts Used:
+- Mechanical seal cartridge John Crane 4620 (1) - Stock Code SEAL-P101-001
+- VantaLube Premium 320 lubricant oil (5 L) - Stock Code LUB-001
+
+NOTES
+-----
+Fourth seal failure on P-101A since early 2023. This frequency is abnormal - pump ran without seal issues from 2018 to 2023. Technician Priya Sharma notes: "Something changed in our maintenance approach around January 2023. We need to look at PM records."
+
+Per Internal Standard VP-MNT-012, equipment with more than 3 similar failures in 18 months requires formal RCA. Meeting to be scheduled.
+
+SIGN-OFF
+--------
+Technician: Priya Sharma
+Supervisor: Rajesh Kumar
+Date Closed: 2024-04-02

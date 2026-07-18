@@ -1,0 +1,115 @@
+{
+  "benchmark_questions": [
+    {
+      "id": "BQ-001",
+      "question": "What is the recurring failure mode on P-101A and what pattern precedes it?",
+      "expected_answer": "P-101A has experienced 4 recurring mechanical seal failures since January 2023. By correlating the work orders, a pattern emerges: each seal failure occurs approximately 2 months after a lubricant change to EconoLube Standard 320 (WO-2023-001 lubricant change -> WO-2023-003 seal failure; WO-2023-010 lubricant change -> WO-2023-013 seal failure; WO-2023-017 lubricant change -> WO-2024-001 seal failure). The seal autopsy reports show elastomer swelling consistent with chemical incompatibility. The entities data shows EconoLube Standard 320 is not approved for pumps with fluorocarbon seals.",
+      "expected_sources": ["maintenance_work_orders.csv", "WO-2023-001.txt", "WO-2023-003.txt", "WO-2023-013.txt", "WO-2024-001.txt", "INC-2023-008.txt", "LUB-STD-001.pdf"],
+      "difficulty": "hard",
+      "category": "pattern_recognition",
+      "notes": "This is the flagship demo question. The answer requires synthesizing: (1) lubricant change records showing EconoLube usage, (2) seal failure work orders with dates, (3) incident reports noting elastomer degradation, and (4) LUB-STD-001.pdf stating EconoLube is incompatible with FFKM/fluorocarbon seals. No single document states the complete pattern - the copilot must correlate dates and connect the incompatibility fact from the lubrication standard."
+    },
+    {
+      "id": "BQ-002",
+      "question": "Which equipment has an unaddressed inspection finding that requires corrective action?",
+      "expected_answer": "V-310 (Overhead Accumulator Drum) has an unaddressed critical finding. Inspection report INS-2023-V310-001 dated August 2023 found 15% wall loss due to Corrosion Under Insulation (CUI) at Shell Course 2, 90° position. Per OISD-STD-119 Section 5.1.4, this exceeds the 10% threshold and requires engineering assessment within 30 days, but no corresponding work order was raised to address this finding.",
+      "expected_sources": ["INS-2023-V310-001.pdf"],
+      "difficulty": "medium",
+      "category": "compliance_gap"
+    },
+    {
+      "id": "BQ-003",
+      "question": "Which SOP is non-compliant with lockout-tagout requirements and why?",
+      "expected_answer": "SOP-LOTO-001 (Lockout-Tagout Procedure) is non-compliant with IS 14489:2018 Clause 6.2.3. The procedure is missing the required step to 'verify zero energy state by attempting equipment startup before maintenance commences.' The current procedure goes directly from stored energy release to performing maintenance work without this verification step.",
+      "expected_sources": ["SOP-LOTO-001.pdf"],
+      "difficulty": "medium",
+      "category": "compliance_gap"
+    },
+    {
+      "id": "BQ-004",
+      "question": "How many seal failures has P-101A experienced since January 2023, and what was the total downtime?",
+      "expected_answer": "P-101A experienced 4 seal failures since January 2023: WO-2023-003 (March 2023, 8 hours), WO-2023-013 (September 2023, 12 hours), WO-2024-001 (January 2024, 16 hours), and WO-2024-006 (April 2024, 10 hours). Total downtime was 46 hours.",
+      "expected_sources": ["maintenance_work_orders.csv"],
+      "difficulty": "easy",
+      "category": "data_aggregation"
+    },
+    {
+      "id": "BQ-005",
+      "question": "What corrective actions were recommended after the V-310 inspection and were they implemented?",
+      "expected_answer": "The inspection INS-2023-V310-001 recommended: 1) Engineering assessment within 30 days for the 15% wall loss finding, 2) Repair or replace insulation jacket, 3) Install insulation standoff at pipe support, 4) Consider protective coating application, and 5) Re-inspect 270° location at 6-month interval. Based on available work orders, these recommendations were NOT implemented - there is no work order addressing the V-310 CUI finding.",
+      "expected_sources": ["INS-2023-V310-001.pdf", "maintenance_work_orders.csv"],
+      "difficulty": "hard",
+      "category": "compliance_gap"
+    },
+    {
+      "id": "BQ-006",
+      "question": "What is the approved lubricant for P-101A and why was it changed?",
+      "expected_answer": "The approved lubricant for P-101A is VantaLube Premium 320. It was changed to EconoLube Standard 320 in January 2023 (WO-2023-001) as part of a cost reduction initiative. The entities data shows EconoLube Standard 320 is marked as 'not approved for high-criticality pumps due to incompatibility with fluorocarbon seals.'",
+      "expected_sources": ["WO-2023-001.txt", "LUB-STD-001.pdf", "SOP-PUMP-001.pdf"],
+      "difficulty": "medium",
+      "category": "root_cause"
+    },
+    {
+      "id": "BQ-007",
+      "question": "Which personnel are certified for pressure vessel inspection at Vantara Petrochem Unit 3?",
+      "expected_answer": "Arvind Menon (EMP-005), Inspection Engineer in the Integrity Management department, is certified for pressure vessel inspection. He holds API 510 (Pressure Vessel Inspector), API 653 (Tank Inspector), and ASNT Level II UT certifications. He performed inspections on V-310, E-205, T-401, PSV-301, H-501, C-102, and D-601.",
+      "expected_sources": ["entities.json", "INS-2023-V310-001.pdf"],
+      "difficulty": "easy",
+      "category": "personnel"
+    },
+    {
+      "id": "BQ-008",
+      "question": "What equipment is shown in the P&ID diagram and what are their interconnections?",
+      "expected_answer": "The CDU P&ID shows: T-401 (Naphtha Tank) feeds P-101A/P-101B (Feed Pumps) through FV-1001 (Flow Control Valve). Flow goes to E-205 (Preheater), then H-501 (Charge Heater), into D-601 (Distillation Column). Column overhead goes to V-310 (Overhead Drum) protected by PSV-301, then to AG-701 (Air Cooler). Side draw goes to T-402 (Diesel Tank). C-102 (H2 Recycle Compressor) handles offgas.",
+      "expected_sources": ["CDU-PID-001.png"],
+      "difficulty": "medium",
+      "category": "diagram_interpretation"
+    },
+    {
+      "id": "BQ-009",
+      "question": "What is the fire watch duration requirement after hot work and which document specifies this?",
+      "expected_answer": "The fire watch duration requirement is a minimum of 30 minutes after completion of hot work. This is specified in OISD-GDN-206 Section 3.4 and documented in SOP-HW-001 (Hot Work Permit Procedure). The procedure requires the fire watch to maintain observation for at least 30 minutes after hot work completion before being released.",
+      "expected_sources": ["SOP-HW-001.pdf", "compliance_rules.json"],
+      "difficulty": "easy",
+      "category": "regulatory"
+    },
+    {
+      "id": "BQ-010",
+      "question": "Which incidents were reported related to P-101A seal leaks and what was the highest severity?",
+      "expected_answer": "Three incidents were reported related to P-101A seal leaks: INC-2023-004 (March 2023, MEDIUM severity near-miss), INC-2023-008 (September 2023, HIGH severity near-miss with LEL readings at 15%), and INC-2024-001 (January 2024, HIGH severity incident with LEL readings at 25% peak and estimated 50 liter release). The highest severity was the January 2024 incident which triggered full area evacuation.",
+      "expected_sources": ["INC-2023-004.txt", "INC-2023-008.txt", "INC-2024-001.txt"],
+      "difficulty": "medium",
+      "category": "incident_analysis"
+    },
+    {
+      "id": "BQ-011",
+      "question": "According to regulations, what is the maximum interval for pressure vessel inspection and which rule governs this?",
+      "expected_answer": "According to Factories Act 1948 Section 31, pressure vessels shall be examined by a competent person at least once every 12 months. Additionally, PESO Rules Rule 14 requires pressure vessels to display a valid fitness certificate with validity not exceeding 2 years. The 12-month examination interval is the governing requirement for routine inspections.",
+      "expected_sources": ["compliance_rules.json", "entities.json"],
+      "difficulty": "easy",
+      "category": "regulatory"
+    },
+    {
+      "id": "BQ-012",
+      "question": "What equipment experienced tube fouling and what action was taken?",
+      "expected_answer": "E-205 (Shell-and-Tube Heat Exchanger - Crude Preheater) experienced tube fouling from crude deposits. This was addressed in WO-2023-002 dated February 2023, where chemical cleaning was performed on the tube bundle, restoring efficiency to 95% of design. Additionally, during inspection INS-2023-E205-001, 3 tubes (45, 78, 112) were plugged due to external corrosion pitting.",
+      "expected_sources": ["maintenance_work_orders.csv", "INS-2023-E205-001.pdf"],
+      "difficulty": "easy",
+      "category": "equipment_history"
+    }
+  ],
+  "evaluation_criteria": {
+    "answer_accuracy": {
+      "weight": 0.5,
+      "description": "Factual correctness of the answer compared to ground truth"
+    },
+    "citation_precision": {
+      "weight": 0.3,
+      "description": "Whether the cited sources match expected sources"
+    },
+    "completeness": {
+      "weight": 0.2,
+      "description": "Whether all key points from expected answer are covered"
+    }
+  }
+}
