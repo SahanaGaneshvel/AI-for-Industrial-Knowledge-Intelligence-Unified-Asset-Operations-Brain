@@ -434,7 +434,8 @@ class KnowledgeGraph:
 
     def save(self, path: Path = GRAPH_PATH):
         """Save graph to JSON."""
-        data = nx.node_link_data(self.graph)
+        # Use edges="links" for backward compatibility with existing graph files
+        data = nx.node_link_data(self.graph, edges="links")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
         print(f"Graph saved: {self.graph.number_of_nodes()} nodes, {self.graph.number_of_edges()} edges")
@@ -446,7 +447,8 @@ class KnowledgeGraph:
         if path.exists():
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            kg.graph = nx.node_link_graph(data)
+            # Use edges="links" for backward compatibility with existing graph files
+            kg.graph = nx.node_link_graph(data, edges="links")
         return kg
 
     def get_node_summary(self) -> Dict[str, int]:

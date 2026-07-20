@@ -23,8 +23,11 @@ class RAGCopilot:
         # Initialize LLM client
         self.llm = GeminiClient()
 
-        # Initialize ChromaDB with helpful error
-        self.chroma_client = chromadb.PersistentClient(path=str(CHROMA_PERSIST_DIR))
+        # Initialize ChromaDB with helpful error (disable telemetry)
+        self.chroma_client = chromadb.PersistentClient(
+            path=str(CHROMA_PERSIST_DIR),
+            settings=Settings(anonymized_telemetry=False),
+        )
         try:
             self.collection = self.chroma_client.get_collection("assetbrain_docs")
         except Exception as e:

@@ -45,15 +45,17 @@ def check_startup_dependencies():
     global startup_status
     startup_status["errors"] = []
 
-    # Check API key
+    # Check API key - FATAL if not set
     if GEMINI_API_KEY:
         startup_status["api_key"] = True
         logger.info("✓ GEMINI_API_KEY is set")
     else:
         startup_status["api_key"] = False
-        error_msg = "GEMINI_API_KEY not set - LLM features will fail"
+        error_msg = "FATAL: GEMINI_API_KEY environment variable not set. Set it with: set GEMINI_API_KEY=your-key"
         startup_status["errors"].append(error_msg)
-        logger.error(f"✗ {error_msg}")
+        logger.critical(f"✗ {error_msg}")
+        logger.critical("Server cannot start without GEMINI_API_KEY. Exiting.")
+        sys.exit(1)
 
     # Check graph.json
     if GRAPH_PATH.exists():
@@ -75,29 +77,12 @@ def check_startup_dependencies():
         startup_status["errors"].append(error_msg)
         logger.warning(f"✗ {error_msg}")
 
-    # Check ChromaDB collection
+    # Check ChromaDB - just verify directory structure (avoid creating client conflicts)
     chroma_path = Path(CHROMA_PERSIST_DIR)
-    if chroma_path.exists() and any(chroma_path.iterdir()):
-        try:
-            import chromadb
-            client = chromadb.PersistentClient(path=str(chroma_path))
-            collections = client.list_collections()
-            collection_names = [c.name for c in collections]
-            if "assetbrain_docs" in collection_names:
-                collection = client.get_collection("assetbrain_docs")
-                doc_count = collection.count()
-                startup_status["chromadb"] = True
-                logger.info(f"✓ ChromaDB collection 'assetbrain_docs' ready ({doc_count} documents)")
-            else:
-                startup_status["chromadb"] = False
-                error_msg = f"ChromaDB exists but 'assetbrain_docs' collection not found - run ingestion first"
-                startup_status["errors"].append(error_msg)
-                logger.warning(f"✗ {error_msg}")
-        except Exception as e:
-            startup_status["chromadb"] = False
-            error_msg = f"ChromaDB check failed: {e}"
-            startup_status["errors"].append(error_msg)
-            logger.error(f"✗ {error_msg}")
+    sqlite_file = chroma_path / "chroma.sqlite3"
+    if sqlite_file.exists():
+        startup_status["chromadb"] = True
+        logger.info(f"✓ ChromaDB directory ready at {chroma_path}")
     else:
         startup_status["chromadb"] = False
         error_msg = "ChromaDB not initialized - run ingestion first"
@@ -331,10 +316,39 @@ async def get_node_neighbors(node_id: str, hops: int = Query(1, ge=1, le=3)):
 async def get_graph_stats():
     """Get graph statistics."""
     try:
-        from .ingest import get_ingester
-        ingester = get_ingester()
-        return ingester.get_stats()
+        from .ingest import KnowledgeGraph
+
+        # Load graph directly
+        kg = KnowledgeGraph.load()
+
+        # Get ChromaDB chunk count - use the copilot's collection to avoid client conflicts
+        chunks_indexed = 0
+        try:
+            from .copilot import get_copilot
+            copilot = get_copilot()
+            chunks_indexed = copilot.collection.count()
+        except Exception:
+            # If copilot not initialized, try direct access
+            try:
+                import chromadb
+                from chromadb.config import Settings
+                client = chromadb.PersistentClient(
+                    path=str(CHROMA_PERSIST_DIR),
+                    settings=Settings(anonymized_telemetry=False),
+                )
+                collection = client.get_collection("assetbrain_docs")
+                chunks_indexed = collection.count()
+            except Exception:
+                pass
+
+        return {
+            "documents_processed": kg.get_node_summary().get("document", 0),
+            "chunks_indexed": chunks_indexed,
+            "graph_nodes": kg.get_node_summary(),
+            "graph_edges": kg.get_edge_summary(),
+        }
     except Exception as e:
+        logger.exception(f"Graph stats error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
